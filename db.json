@@ -1,0 +1,30 @@
+{
+  "headerMainNews": [
+    {
+      "id": 1,
+      "title": "Venäjän hyökkäys"
+    },
+    {
+      "id": 2,
+      "title": "Lähi-itä"
+    },
+    {
+      "id": 3,
+      "title": "Yhdysvaltain presidentinvaalit"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "Yhdysvaltain presidentinvaalit",
+      "content": "Sisältö.",
+      "timestamp": "2024-10-21"
+    },
+    {
+      "id": 2,
+      "title": "Uutinen 2",
+      "content": "Sisältö.",
+      "timestamp": "2024-10-22"
+    }
+  ]
+}
