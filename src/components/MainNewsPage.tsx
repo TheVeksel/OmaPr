@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
 
-export default function NewsPage() {
+
+export default function MainNewsPage() {
   return (
     <div>
       <p>ffdfddfd</p>

@@ -1,19 +1,16 @@
-interface NewsItem {
-  id: number;
-  title: string;
+import { HeaderMainNewsItem } from "./Header";
+
+interface HeaderMainNewsProps {
+  news: HeaderMainNewsItem[]; 
 }
 
-interface MainNewsProps {
-  news: NewsItem[]; 
-}
-
-export default function MainNews({ news }: MainNewsProps): JSX.Element {
+export default function MainNews({ news }: HeaderMainNewsProps): JSX.Element {
   return (
     <nav className="header__main-news">
       <ul>
         {news.map((item) => (
           <li key={item.id}>
-            <a href="#">{item.title}</a>
+            {item.title}
           </li>
         ))}
       </ul>

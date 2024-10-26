@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import HeaderAside from './components/Header/HeaderAside/HeaderAside';
-import NewsPage from './components/NewsPage';
+import NewsPage from './components/MainNewsPage';
 
 export default function App() {
   return (

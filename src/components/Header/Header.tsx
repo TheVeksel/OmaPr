@@ -1,24 +1,25 @@
 import { Link } from "react-router-dom";
 import MainNews from "./MainNews";
 import ThirdHeaderPart from "./ThirdHeaderPart";
-import axios from "axios";
 import { useEffect, useState } from "react";
+import axios from "axios";
 
-interface NewsItem {
+export interface HeaderMainNewsItem {
   id: number;
   title: string;
 }
 
 export default function Header(): JSX.Element {
-  const [headerNews, setHeaderNews] = useState<NewsItem[]>([]);
+  const [headerNews, setHeaderNews] = useState<HeaderMainNewsItem[]>([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/headerMainNews')
+    axios
+      .get("http://localhost:5000/headerMainNews")
       .then((response) => {
         setHeaderNews(response.data);
       })
       .catch((error) => {
-        console.log(error);
+        console.error(error);
       });
   });
 
@@ -27,11 +28,9 @@ export default function Header(): JSX.Element {
       <header>
         <div className="main">
           <Link to="/">
-            <a href="#">
-              <img className="logo" src="/photo/1024x1024.jpg" alt="img" />
-              <h3 className="logo__text">Etusivu</h3>
-              <div className="bar"></div>
-            </a>
+            <img className="logo" src="/photo/1024x1024.jpg" alt="img" />
+            <h3 className="logo__text">Etusivu</h3>
+            <div className="bar"></div>
           </Link>
         </div>
         <div className="wrapper">

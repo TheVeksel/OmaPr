@@ -1,14 +1,19 @@
+import { AsideMainNewsItem } from "./HeaderAside";
 
-export default function HeaderAsideElement({ children }: { children: React.ReactNode }): JSX.Element {
+interface AsideMainNewsProps {
+  news: AsideMainNewsItem[];
+}
+
+export default function HeaderAsideElement({ news }: AsideMainNewsProps): JSX.Element {
   return (
-    <div>
-      <div className="aside__list-element">
-        <div className="news-header">
-          <p className="time-ago">10min</p>
-          <span className="decoration"></span>
-        </div>
-        <h3 className="main__text">{children}</h3>
-      </div>
-    </div>
-  )
+    <ul className="news-header">
+      {news.map((item) => (
+        <li className="aside__list-element" key={item.id}>
+          <div className="decoration"></div>
+          <p className="time-ago">{item.timestamp}</p>
+          <h3 className="main__text">{item.title}</h3>
+        </li>
+      ))}
+    </ul>
+  );
 }
