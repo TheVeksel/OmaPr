@@ -7,7 +7,6 @@ export default function MainNewsPage() {
         <CentredContent/>
         <CentredContent/>
         <CentredContent/>
-        <CentredContent/>
       </section>
     </main>
   );
