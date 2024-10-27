@@ -46,6 +46,14 @@ const data = {
       "imgURL": ""
     },
     {
+      "id": 5,
+      "title": "Bolivian entinen presidentti sanoo joutuneensa aseellisen hyökkäyksen kohteeksi",
+      "subTitle": "Evo Moralesin mukaan hänen autonkuljettajansa haavoittui ammuskelussa.",
+      "newsText": "Boliviassa maan entinen presidentti Evo Morales kertoo joutuneensa sunnuntaina aseellisen hyökkäyksen kohteeksi. Moralesin mukaan hyökkäys kohdistui hänen ajoneuvoonsa Cochabamban kaupungissa, kun hän oli matkalla radiohaastatteluun. Entinen presidentti on julkaissut Facebook-tilillään videon, joka on kuvattu liikkuvasta autosta. Videolla hän istuu etumatkustajan paikalla, ja tuulilasissa näkyy ainakin kaksi luodinreikää. Asiasta raportoiva uutistoimisto Reuters eikä Yle ole kyennyt itsenäisesti varmistamaan videon aitoutta. Moralesin mukaan autonkuljettaja haavoittui ammuskelussa. –Autossa, jolla saavuin, on 14 luodinreikää, entinen presidentti kertoo. Hän lisäsi ukovansa, että isku oli suunniteltu ja sen tarkoituksena oli hänen tappamisensa. Talouskriisin vaivaamassa Boliviassa poliittiset jännitteet ovat viime aikoina lisääntyneet maan entisen johtajan kannattajien, sekä nykyisen presidentin Luis Arcen hallituksen välillä.",
+      "timestamp": "9:00",
+      "imgURL": ""
+    },
+    {
       "id": 6,
       "title": "Bolivian entinen presidentti sanoo joutuneensa aseellisen hyökkäyksen kohteeksi",
       "subTitle": "Evo Moralesin mukaan hänen autonkuljettajansa haavoittui ammuskelussa.",
@@ -55,14 +63,46 @@ const data = {
     },
     {
       "id": 7,
-      "title": "Bolivian entinen presidentti sanoo joutuneensa aseellisen hyökkäyksen kohteeksi",
-      "subTitle": "Evo Moralesin mukaan hänen autonkuljettajansa haavoittui ammuskelussa.",
-      "newsText": "Boliviassa maan entinen presidentti Evo Morales kertoo joutuneensa sunnuntaina aseellisen hyökkäyksen kohteeksi. Moralesin mukaan hyökkäys kohdistui hänen ajoneuvoonsa Cochabamban kaupungissa, kun hän oli matkalla radiohaastatteluun. Entinen presidentti on julkaissut Facebook-tilillään videon, joka on kuvattu liikkuvasta autosta. Videolla hän istuu etumatkustajan paikalla, ja tuulilasissa näkyy ainakin kaksi luodinreikää. Asiasta raportoiva uutistoimisto Reuters eikä Yle ole kyennyt itsenäisesti varmistamaan videon aitoutta. Moralesin mukaan autonkuljettaja haavoittui ammuskelussa. –Autossa, jolla saavuin, on 14 luodinreikää, entinen presidentti kertoo. Hän lisäsi ukovansa, että isku oli suunniteltu ja sen tarkoituksena oli hänen tappamisensa. Talouskriisin vaivaamassa Boliviassa poliittiset jännitteet ovat viime aikoina lisääntyneet maan entisen johtajan kannattajien, sekä nykyisen presidentin Luis Arcen hallituksen välillä.",
+      "title": "Epäilty terrori-isku Israelissa – yksi kuoli ja kymmeniä loukkaantui",
+      "subTitle": "Haaretz-lehden mukaan väkijoukkoon ajo tapahtui lähellä Israelin tiedustelutukikohtaa.",
+      "newsText": "Glilotissa Keski-Israelissa yksi ihminen on kuollut ja kymmeniä loukkaantunut kuorma-auton törmättyä bussipysäkille sunnuntaina, kertoo alueen pelastuspalvelu. Haaretz-lehden mukaan väkijoukkoon ajo tapahtui noin kello 10 aamulla, lähellä Israelin tiedustelutukikohtaa. Israelin poliisin mukaan kuorma-auto törmäsi myös pysäkillä seisoneeseen bussiin. Poliisin mukaan yksi ihminen kuoli myöhemmin törmäyksessä saamiinsa vammoihin. Lisäksi noin 40 kerrotaan loukkaantuneen. Poliisin mukaan paikalla olleet siviilit ampuivat kuorma-auton kuljettajan ja ”neutralisoivat” hänet. Haaretz kertoo poliisin tutkivan tapahtunutta terrori-iskuna, mutta selvittävän myös muita mahdollisia motiiveja. Äärijärjestö Hamas on sunnuntaina antanut lausunnon, jossa kuvattiin ”sankarillisen törmäyshyökkäyksen” lähellä Israelin tiedustelutukokohtaa ”olleen vastaus sionistisen miehityksen palestiinalaisia vastaan tekemiin rikoksiin”. Sunnuntaina Israelissa sattui myös toinen, erillinen välikohtaus lähellä Jerusalemia, jossa Israelin sotilaat ampuivat miehen, joka yritti puukottaa heitä ”terrorismin vastaisessa” operaatiossa. Israelin armeija on kuvannut puukotusyritystä ”terroriteoksi.”",
       "timestamp": "9:00",
-      "imgURL": ""
+      "imgURL": "https://images.cdn.yle.fi/image/upload/ar_1.5,c_fill,g_faces,h_424,w_636/dpr_1.0/q_auto:eco/f_auto/fl_lossy/v1730020850/39-1370034671e057b2ad9e"
     },
     {
-      "id": 5,
+      "id": 8,
+      "title": "Epäilty terrori-isku Israelissa – yksi kuoli ja kymmeniä loukkaantui",
+      "subTitle": "Haaretz-lehden mukaan väkijoukkoon ajo tapahtui lähellä Israelin tiedustelutukikohtaa.",
+      "newsText": "Glilotissa Keski-Israelissa yksi ihminen on kuollut ja kymmeniä loukkaantunut kuorma-auton törmättyä bussipysäkille sunnuntaina, kertoo alueen pelastuspalvelu. Haaretz-lehden mukaan väkijoukkoon ajo tapahtui noin kello 10 aamulla, lähellä Israelin tiedustelutukikohtaa. Israelin poliisin mukaan kuorma-auto törmäsi myös pysäkillä seisoneeseen bussiin. Poliisin mukaan yksi ihminen kuoli myöhemmin törmäyksessä saamiinsa vammoihin. Lisäksi noin 40 kerrotaan loukkaantuneen. Poliisin mukaan paikalla olleet siviilit ampuivat kuorma-auton kuljettajan ja ”neutralisoivat” hänet. Haaretz kertoo poliisin tutkivan tapahtunutta terrori-iskuna, mutta selvittävän myös muita mahdollisia motiiveja. Äärijärjestö Hamas on sunnuntaina antanut lausunnon, jossa kuvattiin ”sankarillisen törmäyshyökkäyksen” lähellä Israelin tiedustelutukokohtaa ”olleen vastaus sionistisen miehityksen palestiinalaisia vastaan tekemiin rikoksiin”. Sunnuntaina Israelissa sattui myös toinen, erillinen välikohtaus lähellä Jerusalemia, jossa Israelin sotilaat ampuivat miehen, joka yritti puukottaa heitä ”terrorismin vastaisessa” operaatiossa. Israelin armeija on kuvannut puukotusyritystä ”terroriteoksi.”",
+      "timestamp": "9:00",
+      "imgURL": "https://images.cdn.yle.fi/image/upload/ar_1.5,c_fill,g_faces,h_424,w_636/dpr_1.0/q_auto:eco/f_auto/fl_lossy/v1730020850/39-1370034671e057b2ad9e"
+    },
+    {
+      "id": 9,
+      "title": "Epäilty terrori-isku Israelissa – yksi kuoli ja kymmeniä loukkaantui",
+      "subTitle": "Haaretz-lehden mukaan väkijoukkoon ajo tapahtui lähellä Israelin tiedustelutukikohtaa.",
+      "newsText": "Glilotissa Keski-Israelissa yksi ihminen on kuollut ja kymmeniä loukkaantunut kuorma-auton törmättyä bussipysäkille sunnuntaina, kertoo alueen pelastuspalvelu. Haaretz-lehden mukaan väkijoukkoon ajo tapahtui noin kello 10 aamulla, lähellä Israelin tiedustelutukikohtaa. Israelin poliisin mukaan kuorma-auto törmäsi myös pysäkillä seisoneeseen bussiin. Poliisin mukaan yksi ihminen kuoli myöhemmin törmäyksessä saamiinsa vammoihin. Lisäksi noin 40 kerrotaan loukkaantuneen. Poliisin mukaan paikalla olleet siviilit ampuivat kuorma-auton kuljettajan ja ”neutralisoivat” hänet. Haaretz kertoo poliisin tutkivan tapahtunutta terrori-iskuna, mutta selvittävän myös muita mahdollisia motiiveja. Äärijärjestö Hamas on sunnuntaina antanut lausunnon, jossa kuvattiin ”sankarillisen törmäyshyökkäyksen” lähellä Israelin tiedustelutukokohtaa ”olleen vastaus sionistisen miehityksen palestiinalaisia vastaan tekemiin rikoksiin”. Sunnuntaina Israelissa sattui myös toinen, erillinen välikohtaus lähellä Jerusalemia, jossa Israelin sotilaat ampuivat miehen, joka yritti puukottaa heitä ”terrorismin vastaisessa” operaatiossa. Israelin armeija on kuvannut puukotusyritystä ”terroriteoksi.”",
+      "timestamp": "9:00",
+      "imgURL": "https://images.cdn.yle.fi/image/upload/ar_1.5,c_fill,g_faces,h_424,w_636/dpr_1.0/q_auto:eco/f_auto/fl_lossy/v1730020850/39-1370034671e057b2ad9e"
+    },
+    {
+      "id": 10,
+      "title": "Epäilty terrori-isku Israelissa – yksi kuoli ja kymmeniä loukkaantui",
+      "subTitle": "Haaretz-lehden mukaan väkijoukkoon ajo tapahtui lähellä Israelin tiedustelutukikohtaa.",
+      "newsText": "Glilotissa Keski-Israelissa yksi ihminen on kuollut ja kymmeniä loukkaantunut kuorma-auton törmättyä bussipysäkille sunnuntaina, kertoo alueen pelastuspalvelu. Haaretz-lehden mukaan väkijoukkoon ajo tapahtui noin kello 10 aamulla, lähellä Israelin tiedustelutukikohtaa. Israelin poliisin mukaan kuorma-auto törmäsi myös pysäkillä seisoneeseen bussiin. Poliisin mukaan yksi ihminen kuoli myöhemmin törmäyksessä saamiinsa vammoihin. Lisäksi noin 40 kerrotaan loukkaantuneen. Poliisin mukaan paikalla olleet siviilit ampuivat kuorma-auton kuljettajan ja ”neutralisoivat” hänet. Haaretz kertoo poliisin tutkivan tapahtunutta terrori-iskuna, mutta selvittävän myös muita mahdollisia motiiveja. Äärijärjestö Hamas on sunnuntaina antanut lausunnon, jossa kuvattiin ”sankarillisen törmäyshyökkäyksen” lähellä Israelin tiedustelutukokohtaa ”olleen vastaus sionistisen miehityksen palestiinalaisia vastaan tekemiin rikoksiin”. Sunnuntaina Israelissa sattui myös toinen, erillinen välikohtaus lähellä Jerusalemia, jossa Israelin sotilaat ampuivat miehen, joka yritti puukottaa heitä ”terrorismin vastaisessa” operaatiossa. Israelin armeija on kuvannut puukotusyritystä ”terroriteoksi.”",
+      "timestamp": "9:00",
+      "imgURL": "https://images.cdn.yle.fi/image/upload/ar_1.5,c_fill,g_faces,h_424,w_636/dpr_1.0/q_auto:eco/f_auto/fl_lossy/v1730020850/39-1370034671e057b2ad9e"
+    },
+    {
+      "id": 11,
+      "title": "Epäilty terrori-isku Israelissa – yksi kuoli ja kymmeniä loukkaantui",
+      "subTitle": "Haaretz-lehden mukaan väkijoukkoon ajo tapahtui lähellä Israelin tiedustelutukikohtaa.",
+      "newsText": "Glilotissa Keski-Israelissa yksi ihminen on kuollut ja kymmeniä loukkaantunut kuorma-auton törmättyä bussipysäkille sunnuntaina, kertoo alueen pelastuspalvelu. Haaretz-lehden mukaan väkijoukkoon ajo tapahtui noin kello 10 aamulla, lähellä Israelin tiedustelutukikohtaa. Israelin poliisin mukaan kuorma-auto törmäsi myös pysäkillä seisoneeseen bussiin. Poliisin mukaan yksi ihminen kuoli myöhemmin törmäyksessä saamiinsa vammoihin. Lisäksi noin 40 kerrotaan loukkaantuneen. Poliisin mukaan paikalla olleet siviilit ampuivat kuorma-auton kuljettajan ja ”neutralisoivat” hänet. Haaretz kertoo poliisin tutkivan tapahtunutta terrori-iskuna, mutta selvittävän myös muita mahdollisia motiiveja. Äärijärjestö Hamas on sunnuntaina antanut lausunnon, jossa kuvattiin ”sankarillisen törmäyshyökkäyksen” lähellä Israelin tiedustelutukokohtaa ”olleen vastaus sionistisen miehityksen palestiinalaisia vastaan tekemiin rikoksiin”. Sunnuntaina Israelissa sattui myös toinen, erillinen välikohtaus lähellä Jerusalemia, jossa Israelin sotilaat ampuivat miehen, joka yritti puukottaa heitä ”terrorismin vastaisessa” operaatiossa. Israelin armeija on kuvannut puukotusyritystä ”terroriteoksi.”",
+      "timestamp": "9:00",
+      "imgURL": "https://images.cdn.yle.fi/image/upload/ar_1.5,c_fill,g_faces,h_424,w_636/dpr_1.0/q_auto:eco/f_auto/fl_lossy/v1730020850/39-1370034671e057b2ad9e"
+    },
+    {
+      "id": 12,
       "title": "Epäilty terrori-isku Israelissa – yksi kuoli ja kymmeniä loukkaantui",
       "subTitle": "Haaretz-lehden mukaan väkijoukkoon ajo tapahtui lähellä Israelin tiedustelutukikohtaa.",
       "newsText": "Glilotissa Keski-Israelissa yksi ihminen on kuollut ja kymmeniä loukkaantunut kuorma-auton törmättyä bussipysäkille sunnuntaina, kertoo alueen pelastuspalvelu. Haaretz-lehden mukaan väkijoukkoon ajo tapahtui noin kello 10 aamulla, lähellä Israelin tiedustelutukikohtaa. Israelin poliisin mukaan kuorma-auto törmäsi myös pysäkillä seisoneeseen bussiin. Poliisin mukaan yksi ihminen kuoli myöhemmin törmäyksessä saamiinsa vammoihin. Lisäksi noin 40 kerrotaan loukkaantuneen. Poliisin mukaan paikalla olleet siviilit ampuivat kuorma-auton kuljettajan ja ”neutralisoivat” hänet. Haaretz kertoo poliisin tutkivan tapahtunutta terrori-iskuna, mutta selvittävän myös muita mahdollisia motiiveja. Äärijärjestö Hamas on sunnuntaina antanut lausunnon, jossa kuvattiin ”sankarillisen törmäyshyökkäyksen” lähellä Israelin tiedustelutukokohtaa ”olleen vastaus sionistisen miehityksen palestiinalaisia vastaan tekemiin rikoksiin”. Sunnuntaina Israelissa sattui myös toinen, erillinen välikohtaus lähellä Jerusalemia, jossa Israelin sotilaat ampuivat miehen, joka yritti puukottaa heitä ”terrorismin vastaisessa” operaatiossa. Israelin armeija on kuvannut puukotusyritystä ”terroriteoksi.”",

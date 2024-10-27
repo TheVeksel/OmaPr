@@ -30,16 +30,18 @@ export default function HeaderAside(): JSX.Element {
     let scrolled = 0;
     const step = () => {
       if (asideRef.current && scrolled < Math.abs(distance)) {
-        asideRef.current.scrollBy({ left: distance /30 });
-        scrolled += Math.abs(distance) / 30;
+        asideRef.current.scrollBy({ left: distance / 150 });
+        scrolled += Math.abs(distance) / 150;
         requestAnimationFrame(step);
       }
     };
     step();
   };
   
-  const scrollLeft = () => smoothScroll(-300);
-  const scrollRight = () => smoothScroll(300);
+  // Прокрутка на 1/3 ширины экрана
+  const scrollLeft = () => smoothScroll(-window.innerWidth );
+  const scrollRight = () => smoothScroll(window.innerWidth );
+  
   
 
   const handleWheel = (event: WheelEvent) => {
