@@ -13,14 +13,16 @@ export default function HeaderAside(): JSX.Element {
   const asideRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:5000/asideMainNews")
-      .then((response) => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("http://localhost:5000/asideMainNews");
         setAsideNews(response.data);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
   }, []);
 
   const scrollLeft = () => {
@@ -33,8 +35,8 @@ export default function HeaderAside(): JSX.Element {
 
   const handleWheel = (event: WheelEvent) => {
     if (asideRef.current) {
-      event.preventDefault(); 
-      const scrollAmount = event.deltaY * 4; 
+      event.preventDefault();
+      const scrollAmount = event.deltaY * 4;
       asideRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
     }
   };
@@ -42,7 +44,7 @@ export default function HeaderAside(): JSX.Element {
   useEffect(() => {
     const aside = asideRef.current;
     aside?.addEventListener("wheel", handleWheel, { passive: false });
-    
+
     return () => {
       aside?.removeEventListener("wheel", handleWheel);
     };
@@ -50,8 +52,12 @@ export default function HeaderAside(): JSX.Element {
 
   return (
     <div style={{ position: "relative" }}>
-      <button className="scroll-button left" onClick={scrollLeft}>←</button>
-      <button className="scroll-button right" onClick={scrollRight}>→</button>
+      <button className="scroll-button left" onClick={scrollLeft}>
+        ←
+      </button>
+      <button className="scroll-button right" onClick={scrollRight}>
+        →
+      </button>
 
       <aside ref={asideRef} className="aside__list">
         <HeaderAsideElement news={asideNews} />

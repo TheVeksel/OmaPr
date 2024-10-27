@@ -13,6 +13,15 @@
       "title": "Yhdysvaltain presidentinvaalit"
     }
   ],
+  "centerRightNowNews": [
+    {
+      "id": 3,
+      "newsGivenBy": "Poliisi",
+      "newsText": "Polis killed some niggers and everybody is happy now",
+      "timeStamp": "14:88",
+      "title": "JUURI NYT"
+    }
+  ],
   "asideMainNews": [
     {
       "id": 1,
@@ -49,6 +58,5 @@
       "title": "Turkki vahvisti tiedon: Vallan­kaap­paus­yri­tyksestä syytetty Fethullah Gülen on kuollut",
       "timestamp": "12:10"
     }
-    
   ]
 }
