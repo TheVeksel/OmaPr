@@ -26,21 +26,33 @@ export default function HeaderAside(): JSX.Element {
     fetchData();
   }, []);
 
-  const scrollLeft = () => {
-    asideRef.current?.scrollBy({ left: -300, behavior: "smooth" });
+  const smoothScroll = (distance: number) => {
+    let scrolled = 0;
+    const step = () => {
+      if (asideRef.current && scrolled < Math.abs(distance)) {
+        asideRef.current.scrollBy({ left: distance /30 });
+        scrolled += Math.abs(distance) / 30;
+        requestAnimationFrame(step);
+      }
+    };
+    step();
   };
-
-  const scrollRight = () => {
-    asideRef.current?.scrollBy({ left: 300, behavior: "smooth" });
-  };
+  
+  const scrollLeft = () => smoothScroll(-300);
+  const scrollRight = () => smoothScroll(300);
+  
 
   const handleWheel = (event: WheelEvent) => {
     if (asideRef.current) {
       event.preventDefault();
-      const scrollAmount = event.deltaY * 4;
-      asideRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      const scrollAmount = event.deltaY * 3;
+      requestAnimationFrame(() => {
+        asideRef.current!.scrollBy({ left: scrollAmount, behavior: "smooth" });
+
+      });
     }
   };
+  
 
   useEffect(() => {
     const aside = asideRef.current;
