@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import HeaderAsideElement from "./HeaderAsideElement";
+import { Link } from "react-router-dom";
 
 export interface AsideMainNewsItem {
   id: number;
@@ -38,11 +39,8 @@ export default function HeaderAside(): JSX.Element {
     step();
   };
   
-  // Прокрутка на 1/3 ширины экрана
-  const scrollLeft = () => smoothScroll(-window.innerWidth );
-  const scrollRight = () => smoothScroll(window.innerWidth );
-  
-  
+  const scrollLeft = () => smoothScroll(-window.innerWidth);
+  const scrollRight = () => smoothScroll(window.innerWidth);
 
   const handleWheel = (event: WheelEvent) => {
     if (asideRef.current) {
@@ -50,11 +48,9 @@ export default function HeaderAside(): JSX.Element {
       const scrollAmount = event.deltaY * 3;
       requestAnimationFrame(() => {
         asideRef.current!.scrollBy({ left: scrollAmount, behavior: "smooth" });
-
       });
     }
   };
-  
 
   useEffect(() => {
     const aside = asideRef.current;
@@ -75,7 +71,11 @@ export default function HeaderAside(): JSX.Element {
       </button>
 
       <aside ref={asideRef} className="aside__list">
-        <HeaderAsideElement news={asideNews} />
+        {asideNews.map(newsItem => (
+          <Link key={newsItem.id} to={`/news/${newsItem.id}`}>
+            <HeaderAsideElement news={newsItem} />
+          </Link>
+        ))}
       </aside>
     </div>
   );
