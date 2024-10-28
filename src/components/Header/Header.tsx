@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export interface HeaderMainNewsItem {
   id: number;
-  title: string;
+  theme: string;
 }
 
 export default function Header(): JSX.Element {
@@ -16,7 +16,7 @@ export default function Header(): JSX.Element {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://yle-react-default-rtdb.europe-west1.firebasedatabase.app/news/headerMainNews.json"
+          "https://yle-react-default-rtdb.europe-west1.firebasedatabase.app/news/headerMainThemes.json"
         );
         const newsArray = Object.values(response.data) as HeaderMainNewsItem[];
         setHeaderNews(newsArray);
@@ -26,7 +26,7 @@ export default function Header(): JSX.Element {
     };
 
     fetchData();
-  }, []);
+  });
 
   return (
     <header>

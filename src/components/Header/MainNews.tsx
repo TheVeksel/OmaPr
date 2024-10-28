@@ -10,7 +10,7 @@ export default function MainNews({ news }: HeaderMainNewsProps): JSX.Element {
       <ul>
         {news.map((item) => (
           <li key={item.id}>
-            {item.title}
+            {item.theme}
           </li>
         ))}
       </ul>

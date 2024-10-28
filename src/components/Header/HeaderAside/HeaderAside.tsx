@@ -16,7 +16,7 @@ export default function HeaderAside(): JSX.Element {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://yle-react-default-rtdb.europe-west1.firebasedatabase.app/news/News.json");
+        const response = await axios.get("https://yle-react-default-rtdb.europe-west1.firebasedatabase.app/news/allNews.json");
         const newsArray = Object.values(response.data) as AsideMainNewsItem[];
         setAsideNews(newsArray);
       } catch (error) {

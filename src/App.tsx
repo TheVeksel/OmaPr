@@ -4,6 +4,7 @@ import CentredContent from './components/MainNewsPage/CentredContent/CentredCont
 import DetailedNew1 from './components/DetailedNews/DetailedNew1';
 import HeaderAside from './components/Header/HeaderAside/HeaderAside';
 import Header from './components/Header/Header';
+import MainNewsPage from './components/MainNewsPage/MainNewsPage';
 
 export default function App() {
   return (
@@ -17,15 +18,14 @@ function MainLayout() {
   const location = useLocation();
 
   return (
-    <div>
+    <>
       <Header />
-      {/* Показывать Aside только на главной странице */}
       {location.pathname === '/' && <HeaderAside />}
       
       <Routes>
-        <Route path="/" element={<CentredContent />} />
+        <Route path="/" element={<MainNewsPage />} />
         <Route path="/news/:id" element={<DetailedNew1 />} />
       </Routes>
-    </div>
+    </>
   );
 }
