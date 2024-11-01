@@ -5,9 +5,10 @@ export default function CentredContent(): JSX.Element {
   
 
   return (
-      <div className="centred__content">
+      <div>
         <RightNowSection id={1}/>
         <MainPageCenterNews id={2}/>
+        <MainPageCenterNews id={7}/>
       </div>
   );
 }

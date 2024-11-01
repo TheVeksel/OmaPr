@@ -2,6 +2,7 @@ import { AsideMainNewsItem } from "./HeaderAside";
 
 interface AsideMainNewsProps {
   news: AsideMainNewsItem;
+  onClick: (id: number) => void;
 }
 
 export default function HeaderAsideElement({ news }: AsideMainNewsProps): JSX.Element {

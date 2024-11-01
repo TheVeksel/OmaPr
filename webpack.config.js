@@ -8,6 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/', // Устанавливаем publicPath для поддержки маршрутизации
   },
   resolve: {
     extensions: ['.js', '.ts', '.tsx', '.jsx'],
@@ -53,6 +54,7 @@ module.exports = {
     port: 3000,
     open: true,
     hot: true,
+    historyApiFallback: true,
   },
   mode: 'development',
 };

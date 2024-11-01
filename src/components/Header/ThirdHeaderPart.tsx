@@ -12,7 +12,6 @@ export default function ThirdHeaderPart(): JSX.Element {
         <img className="search__img" src="/photo/lataus.png" alt="img" />
       </div>
       <Button className="hamburger" onClick={() => console.log('click')}>
-        <p className="hamburger__text">Valikko</p>
         <img src="/photo/latau.webp.webp" alt="img" />
       </Button>
     </div>

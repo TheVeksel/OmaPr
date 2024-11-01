@@ -1,3 +1,21 @@
+html::-webkit-scrollbar {
+  width: 8px; 
+}
+
+html::-webkit-scrollbar-track {
+  background: #1c1c1c; 
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #555; 
+  border-radius: 10px;
+}
+
+html {
+  scrollbar-width: 6px; 
+  scrollbar-color: #555 #1c1c1c; 
+}
+
 body {
   background-color: #131415;
   margin: 0;
@@ -13,14 +31,17 @@ body {
   height: 100%;
 }
 
+.header__wraper {
+}
+
 header {
   background-color: #1f2123;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 13vw;
-  font-size: 14px;
-  font-weight: 700;
+  padding: 0 20vw;
+  font-size: 15px;
+  font-weight: 500;
   border-bottom: gray 1px solid;
 
   .main a {
@@ -92,8 +113,6 @@ header {
 
         &__text {
           color: white;
-          font-weight: 700;
-          font-size: 14px;
         }
 
         img {
@@ -105,17 +124,17 @@ header {
 }
 
 /* ASIDE */
-aside {
+.header__aside {
   -ms-overflow-style: none;
   scrollbar-width: none;
   background-color: #1f2123;
   display: flex;
-  padding: 20px;
-  margin-bottom: 30px;
-  font-weight: 500;
+  padding: 10px 20px;
   border-bottom: 1px rgb(79, 79, 79) solid;
   overflow-x: scroll;
   position: relative;
+  gap: 15px;
+  width: 100%;
 }
 
 .scroll-button {
@@ -130,12 +149,12 @@ aside {
   z-index: 2;
 
   &.left {
-    top: 2vh;
+    top: 1vh;
     right: 9vw;
   }
 
   &.right {
-    top: 2vh;
+    top: 1vh;
     right: 3vw;
   }
 }
@@ -151,10 +170,10 @@ aside {
   flex-direction: column;
   align-items: flex-start;
   flex-grow: 1;
-  padding: 10px;
+  margin: 5px 0 0 0;
   border-bottom: 1px solid #333;
   gap: 5px;
-  min-height: 100px; /* Или используйте min-height для динамической высоты */
+  min-height: 100px;
   min-width: 350px;
 }
 
@@ -176,16 +195,12 @@ aside {
   font-size: 14px;
 }
 
-.centred__content {
-  min-width: 45vw;
-}
-
 .all__news {
   display: flex;
   gap: 30px;
-  flex-wrap: nowrap; 
-  padding: 0 10vw;
-  width: 100%; 
+  padding: 40px 20vw;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .rightnow {
@@ -222,13 +237,12 @@ aside {
 }
 
 .sided__content {
-  float: right;
   background-color: #131415;
   padding-top: 0;
   display: block;
   font-weight: 300;
-  min-width: 30vw;
   max-width: 30vw;
+  flex-grow: 1;
 
   &-header {
     font-size: 22px;
@@ -236,7 +250,11 @@ aside {
     font-weight: 700;
   }
 }
-
+.sided__content-headerwrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 .number {
   background-color: white;
   color: black;
@@ -256,17 +274,17 @@ aside {
   margin-bottom: 25px;
 
   &__content {
-    margin-left: 40px;
+    margin-left: 20px;
   }
 
   &__header h4 {
-    margin: 0;
     font-size: 16px;
   }
 }
 
 .centred__contentnews {
   margin-bottom: 60px;
+  min-width: 30vw;
 
   &-el {
     background-color: #1f2123;
@@ -276,10 +294,10 @@ aside {
 }
 
 .imgbox {
-  width: 100%; 
+  width: 100%;
   margin-bottom: 10px;
   border-top-left-radius: 5px;
-  border-top-right-radius: 5px ;
+  border-top-right-radius: 5px;
 }
 
 .element__content {
@@ -296,17 +314,6 @@ aside {
   margin-bottom: 20px;
 }
 
-.coments {
-  display: flex;
-  gap: 10px;
-  margin-top: 15px;
-  font-size: 14px;
-
-  img {
-    max-width: 20px;
-  }
-}
-
 .el__news-header {
   margin-bottom: 10px;
   font-size: 24px;
@@ -315,6 +322,50 @@ aside {
 .news__text {
   margin-bottom: 10px;
 }
+
+// DetailedNews styles
+.centred__detailed-news {
+  max-width: 35vw;
+}
+
+.detailed__news-header {
+  margin-bottom: 10px;
+
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.detailed__news-img {
+  margin-bottom: 30px;
+  max-width: 100%;
+}
+
+.newsgivenby {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.detailed__news-timeago {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.detailed__news-text {
+  line-height: 1.6; 
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+
 
 /* MEDIA QUERIES */
 @media (max-width: 1250px) {
@@ -326,7 +377,6 @@ aside {
     .search,
     .logo__text,
     .bar,
-    .hamburger__text,
     .sided__content {
       display: none !important;
     }
@@ -342,30 +392,30 @@ aside {
     .hamburger {
       margin-left: auto;
     }
-
-    .all__news {
-      display: block;
-    }
-
-    .rightnow {
-      margin-bottom: 3rem;
-    }
-
-    #elNum4 {
-      display: none;
-    }
-
-    .sided__content {
-      display: none;
-    }
   }
 
-  @media (max-width: 450px) {
-    #elNum3 {
-      display: none;
-    }
-    .scroll-button {
-      display: none;
-    }
+  .all__news {
+    display: block;
+    padding: 10px;
+  }
+
+  .rightnow {
+    margin-bottom: 3rem;
+  }
+
+  #elNum4 {
+    display: none;
+  }
+
+  .sided__content {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  #elNum3 {
+    display: none;
+  }
+  .scroll-button {
+    display: none;
   }
 }

@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import HeaderAsideElement from "./HeaderAsideElement";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export interface AsideMainNewsItem {
   id: number;
@@ -26,6 +27,12 @@ export default function HeaderAside(): JSX.Element {
 
     fetchData();
   }, []);
+
+  const navigate = useNavigate()
+
+  const handleClick = (id:number) => {
+    navigate(`/news/${id}`)
+  }
 
   const smoothScroll = (distance: number) => {
     let scrolled = 0;
@@ -70,10 +77,10 @@ export default function HeaderAside(): JSX.Element {
         →
       </button>
 
-      <aside ref={asideRef} className="aside__list">
+      <aside ref={asideRef} className="header__aside">
         {asideNews.map(newsItem => (
           <Link key={newsItem.id} to={`/news/${newsItem.id}`}>
-            <HeaderAsideElement news={newsItem} />
+            <HeaderAsideElement onClick={handleClick} news={newsItem}  />
           </Link>
         ))}
       </aside>

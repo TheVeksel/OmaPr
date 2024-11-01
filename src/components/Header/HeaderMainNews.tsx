@@ -4,7 +4,7 @@ interface HeaderMainNewsProps {
   news: HeaderMainNewsItem[]; 
 }
 
-export default function MainNews({ news }: HeaderMainNewsProps): JSX.Element {
+export default function HeaderMainNews({ news }: HeaderMainNewsProps): JSX.Element {
   return (
     <nav className="header__main-news">
       <ul>

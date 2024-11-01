@@ -1,4 +1,4 @@
-import MainNews from "./MainNews";
+import HeaderMainNews from "./HeaderMainNews";
 import ThirdHeaderPart from "./ThirdHeaderPart";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -29,18 +29,20 @@ export default function Header(): JSX.Element {
   });
 
   return (
-    <header>
-      <div className="main">
-        <Link to="/">
-          <img className="logo" src="/photo/1024x1024.jpg" alt="img" />
-          <h3 className="logo__text">Etusivu</h3>
-          <div className="bar"></div>
-        </Link>
-      </div>
-      <div className="wrapper">
-        <MainNews news={headerNews} />
-        <ThirdHeaderPart />
-      </div>
-    </header>
+    <div className="header__wraper">
+      <header>
+        <div className="main">
+          <Link to="/">
+            <img className="logo" src="/photo/1024x1024.jpg" alt="img" />
+            <h3 className="logo__text">Etusivu</h3>
+            <div className="bar"></div>
+          </Link>
+        </div>
+        <div className="wrapper">
+          <HeaderMainNews news={headerNews} />
+          <ThirdHeaderPart />
+        </div>
+      </header>
+    </div>
   );
 }

@@ -1,11 +1,11 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 interface MainPage {
   id: number;
   title: string;
   subTitle: string;
-  newsText: string;
   timestamp: string;
   imgURL: string;
   newsGivenBy: string;
@@ -36,15 +36,18 @@ export default function MainPageCenterNews({ id }: MainPageNewsProps): JSX.Eleme
   }
 
   return (
-    <div className="centred__contentnews">
-      <div className="centred__contentnews-el">
-        <div className="imgbox"><img className="imgbox" src={news.imgURL} alt="img" /></div>
-        <div className="element__content">
-          <h1 className="el__news-header">{news.title}</h1>
-          <p className="news__text">{news.subTitle}</p>
+    <Link to={`/news/${news.id}`}>
+        <div className="centred__contentnews">
+          <div className="centred__contentnews-el">
+            <div className="imgbox"><img className="imgbox" src={news.imgURL} alt="img" /></div>
+            <div className="element__content">
+              <p>{news.newsGivenBy}</p>
+              <h1 className="el__news-header">{news.title}</h1>
+              <p className="news__text">{news.subTitle}</p>
+            </div>
+            <div className="dopinfo">{news.timestamp}</div>
+          </div>
         </div>
-        <div className="dopinfo">{news.timestamp}</div>
-      </div>
-    </div>
+    </Link>
   );
 }
