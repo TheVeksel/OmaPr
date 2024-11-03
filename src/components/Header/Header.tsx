@@ -1,8 +1,10 @@
-import HeaderMainNews from "./HeaderMainNews";
-import ThirdHeaderPart from "./ThirdHeaderPart";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { resetOpenNewsId } from "../../store/features/newsOpenSlice";
+import HeaderMainNews from "./HeaderMainNews";
+import ThirdHeaderPart from "./ThirdHeaderPart";
 
 export interface HeaderMainNewsItem {
   id: number;
@@ -11,6 +13,11 @@ export interface HeaderMainNewsItem {
 
 export default function Header(): JSX.Element {
   const [headerNews, setHeaderNews] = useState<HeaderMainNewsItem[]>([]);
+  const dispatch = useDispatch();
+
+  const handleLogoClick = () => {
+    dispatch(resetOpenNewsId()); // Сбрасываем состояние открытой новости при клике на логотип
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -26,13 +33,13 @@ export default function Header(): JSX.Element {
     };
 
     fetchData();
-  });
+  }, []);
 
   return (
     <div className="header__wraper">
       <header>
         <div className="main">
-          <Link to="/">
+          <Link to="/" onClick={handleLogoClick}>
             <img className="logo" src="/photo/1024x1024.jpg" alt="img" />
             <h3 className="logo__text">Etusivu</h3>
             <div className="bar"></div>

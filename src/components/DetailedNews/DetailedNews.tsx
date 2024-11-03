@@ -2,6 +2,10 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import SidedContent from "../MainNewsPage/SidedContent/SidedContent";
+import { RootState } from "../../store/store";
+import { useSelector, useDispatch } from 'react-redux';
+import { setOpenNewsId } from "../../store/features/newsOpenSlice";
+import Cookies from 'js-cookie';
 
 export interface DetailedNewsContent {
   id: number;
@@ -13,9 +17,20 @@ export interface DetailedNewsContent {
   newsGivenBy: string;
 }
 
-export default function DetailedNews(): JSX.Element {
+export default function DetailedNews(): JSX.Element | null {
   const { id } = useParams<{ id: string }>();
   const [news, setNews] = useState<DetailedNewsContent | null>(null);
+  const dispatch = useDispatch();
+  const isNewsOpen = useSelector((state: RootState) => state.newsOpen.openNewsId);
+
+  useEffect(() => {
+    const openNewsIdFromCookie = Cookies.get('openNewsId');
+    if (openNewsIdFromCookie) {
+      dispatch(setOpenNewsId(Number(openNewsIdFromCookie)));
+    } else if (id) {
+      dispatch(setOpenNewsId(Number(id)));
+    }
+  }, [dispatch, id]);
 
   useEffect(() => {
     const fetchNews = async () => {
@@ -40,9 +55,12 @@ export default function DetailedNews(): JSX.Element {
     ));
   };
   
-
+  if (!isNewsOpen) {
+    return null;
+  }
+  
   if (!news) {
-    return <div>Loading...</div>;
+    return null
   }
 
   return (

@@ -1,6 +1,8 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { setOpenNewsId } from "../../../store/features/newsOpenSlice";
+import axios from "axios";
 
 interface MainPage {
   id: number;
@@ -15,8 +17,13 @@ interface MainPageNewsProps {
   id: number;
 }
 
-export default function MainPageCenterNews({ id }: MainPageNewsProps): JSX.Element {
+export default function MainPageCenterNews({ id }: MainPageNewsProps): JSX.Element | null {
   const [news, setMainPageNews] = useState<MainPage | null>(null);
+  const dispatch = useDispatch();
+
+  const handleOpenNews = () => {
+    dispatch(setOpenNewsId(id));
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -32,22 +39,22 @@ export default function MainPageCenterNews({ id }: MainPageNewsProps): JSX.Eleme
   }, [id]);
 
   if (!news) {
-    return <div>Loading...</div>;
+    return null;
   }
 
   return (
-    <Link to={`/news/${news.id}`}>
-        <div className="centred__contentnews">
-          <div className="centred__contentnews-el">
-            <div className="imgbox"><img className="imgbox" src={news.imgURL} alt="img" /></div>
-            <div className="element__content">
-              <p>{news.newsGivenBy}</p>
-              <h1 className="el__news-header">{news.title}</h1>
-              <p className="news__text">{news.subTitle}</p>
-            </div>
-            <div className="dopinfo">{news.timestamp}</div>
+    <Link to={`/news/${news.id}`} onClick={handleOpenNews}>
+      <div className="centred__contentnews">
+        <div className="centred__contentnews-el">
+          <div className="imgbox"><img className="imgbox" src={news.imgURL} alt="img" /></div>
+          <div className="element__content">
+            <p>{news.newsGivenBy}</p>
+            <h1 className="el__news-header">{news.title}</h1>
+            <p className="news__text">{news.subTitle}</p>
           </div>
+          <div className="dopinfo">{news.timestamp}</div>
         </div>
+      </div>
     </Link>
   );
 }

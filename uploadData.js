@@ -49,83 +49,106 @@ const data = {
       subTitle: "Sähköpörssi Nord Poolin hinnat ovat käyneet sunnuntaina miinuksen puolella. Samaa on luvassa myös maanantaina.",
       newsText: "Pörssisähkön tuntihinnat ovat laskeneet viikonvaihteeseen hyvin mataliksi. Sähköpörssi Nord Poolin tuntihinnat ovat olleet sunnuntaina miinuksella niin pitkään, että koko päivän keskihinta on lopulta -0,01 senttiä kilowattitunti. Kalleimmillaan hinta oli vuorokauden alussa, mikä sekin oli vain 0,51 senttiä kilowattitunnilta. Tämän jälkeen hinnat painuivat negatiivisiksi kello 3 yöllä ja pysyttelivät siellä aina kello 16 asti. Hinnat ovat myös maanantaina miinuksella vuorokauden aluksi aina kello 7 saakka. Päivän keskihinta on 0,42 snt/kWh. Hintapiikki nähdään kello 18, kun sähkö maksaa 1,88 snt/kWh. Alhaisia sähkönhintoja selittävät usein suotuisat tuuliolosuhteet. Kantaverkkoyhtiö Fingridin mukaan tuulivoimantuotanto onkin ollut kasvussa sunnuntain aikana.",
       timestamp: "10:00",
-      newsGivenBy: "",
+      newsGivenBy: "Energiatiedote",
       imgURL: "https://images.cdn.yle.fi/image/upload/ar_1.5633587786259542,c_fill,g_faces,h_406,w_636/dpr_1.0/q_auto:eco/f_auto/fl_lossy/v1728890070/39-1363217670cc46293278"
     },
-    {
-      id: 4,
-      title: "Bolivian entinen presidentti sanoo joutuneensa aseellisen hyökkäyksen kohteeksi",
-      subTitle: "Evo Moralesin mukaan hänen autonkuljettajansa haavoittui ammuskelussa.",
-      newsText: "Boliviassa maan entinen presidentti Evo Morales kertoo joutuneensa sunnuntaina aseellisen hyökkäyksen kohteeksi. Moralesin mukaan hyökkäys kohdistui hänen ajoneuvoonsa Cochabamban kaupungissa, kun hän oli matkalla radiohaastatteluun. Entinen presidentti on julkaissut Facebook-tilillään videon, joka on kuvattu liikkuvasta autosta. Videolla hän istuu etumatkustajan paikalla, ja tuulilasissa näkyy ainakin kaksi luodinreikää. Asiasta raportoiva uutistoimisto Reuters eikä Yle ole kyennyt itsenäisesti varmistamaan videon aitoutta. Moralesin mukaan autonkuljettaja haavoittui ammuskelussa. –Autossa, jolla saavuin, on 14 luodinreikää, entinen presidentti kertoo. Hän lisäsi ukovansa, että isku oli suunniteltu ja sen tarkoituksena oli hänen tappamisensa. Talouskriisin vaivaamassa Boliviassa poliittiset jännitteet ovat viime aikoina lisääntyneet maan entisen johtajan kannattajien, sekä nykyisen presidentin Luis Arcen hallituksen välillä.",
-      timestamp: "11:00",
-      newsGivenBy: "Joukkoviestin",
-      imgURL: ""
-    },
-    {
-      id: 5,
-      title: "Bolivian entinen presidentti sanoo joutuneensa aseellisen hyökkäyksen kohteeksi",
-      subTitle: "Evo Moralesin mukaan hänen autonkuljettajansa haavoittui ammuskelussa.",
-      newsText: "Boliviassa maan entinen presidentti Evo Morales kertoo joutuneensa sunnuntaina aseellisen hyökkäyksen kohteeksi. Moralesin mukaan hyökkäys kohdistui hänen ajoneuvoonsa Cochabamban kaupungissa, kun hän oli matkalla radiohaastatteluun. Entinen presidentti on julkaissut Facebook-tilillään videon, joka on kuvattu liikkuvasta autosta. Videolla hän istuu etumatkustajan paikalla, ja tuulilasissa näkyy ainakin kaksi luodinreikää. Asiasta raportoiva uutistoimisto Reuters eikä Yle ole kyennyt itsenäisesti varmistamaan videon aitoutta. Moralesin mukaan autonkuljettaja haavoittui ammuskelussa. –Autossa, jolla saavuin, on 14 luodinreikää, entinen presidentti kertoo. Hän lisäsi ukovansa, että isku oli suunniteltu ja sen tarkoituksena oli hänen tappamisensa. Talouskriisin vaivaamassa Boliviassa poliittiset jännitteet ovat viime aikoina lisääntyneet maan entisen johtajan kannattajien, sekä nykyisen presidentin Luis Arcen hallituksen välillä.",
-      timestamp: "12:00",
-      newsGivenBy: "Joukkoviestin",
-      imgURL: ""
-    },
-    {
-      id: 6,
-      title: "Bolivian entinen presidentti sanoo joutuneensa aseellisen hyökkäyksen kohteeksi",
-      subTitle: "Evo Moralesin mukaan hänen autonkuljettajansa haavoittui ammuskelussa.",
-      newsText: "Boliviassa maan entinen presidentti Evo Morales kertoo joutuneensa sunnuntaina aseellisen hyökkäyksen kohteeksi. Moralesin mukaan hyökkäys kohdistui hänen ajoneuvoonsa Cochabamban kaupungissa, kun hän oli matkalla radiohaastatteluun. Entinen presidentti on julkaissut Facebook-tilillään videon, joka on kuvattu liikkuvasta autosta. Videolla hän istuu etumatkustajan paikalla, ja tuulilasissa näkyy ainakin kaksi luodinreikää. Asiasta raportoiva uutistoimisto Reuters eikä Yle ole kyennyt itsenäisesti varmistamaan videon aitoutta. Moralesin mukaan autonkuljettaja haavoittui ammuskelussa. –Autossa, jolla saavuin, on 14 luodinreikää, entinen presidentti kertoo. Hän lisäsi ukovansa, että isku oli suunniteltu ja sen tarkoituksena oli hänen tappamisensa. Talouskriisin vaivaamassa Boliviassa poliittiset jännitteet ovat viime aikoina lisääntyneet maan entisen johtajan kannattajien, sekä nykyisen presidentin Luis Arcen hallituksen välillä.",
-      timestamp: "13:00",
-      newsGivenBy: "Joukkoviestin",
-      imgURL: ""
-    },
-    {
-      id: 7,
-      title: "Epäilty terrori-isku Israelissa – yksi kuoli ja kymmeniä loukkaantui",
-      subTitle: "Haaretz-lehden mukaan väkijoukkoon ajo tapahtui lähellä Israelin tiedustelutukikohtaa.",
-      newsText: "Glilotissa Keski-Israelissa yksi ihminen on kuollut ja kymmeniä loukkaantunut kuorma-auton törmättyä bussipysäkille sunnuntaina, kertoo alueen pelastuspalvelu. Haaretz-lehden mukaan väkijoukkoon ajo tapahtui noin kello 10 aamulla, lähellä Israelin tiedustelutukikohtaa. Israelin poliisin mukaan kuorma-auto törmäsi myös pysäkillä seisoneeseen bussiin. Poliisin mukaan yksi ihminen kuoli myöhemmin törmäyksessä saamiinsa vammoihin. Lisäksi noin 40 kerrotaan loukkaantuneen. Poliisin mukaan paikalla olleet siviilit ampuivat kuorma-auton kuljettajan ja ”neutralisoivat” hänet. Haaretz kertoo poliisin tutkivan tapahtunutta terrori-iskuna, mutta selvittävän myös muita mahdollisia motiiveja. Äärijärjestö Hamas on sunnuntaina antanut lausunnon, jossa kuvattiin ”sankarillisen törmäyshyökkäyksen” lähellä Israelin tiedustelutukokohtaa ”olleen vastaus sionistisen miehityksen palestiinalaisia vastaan tekemiin rikoksiin”. Sunnuntaina Israelissa sattui myös toinen, erillinen välikohtaus lähellä Jerusalemia, jossa Israelin sotilaat ampuivat miehen, joka yritti puukottaa heitä ”terrorismin vastaisessa” operaatiossa. Israelin armeija on kuvannut puukotusyritystä ”terroriteoksi.”",
-      timestamp: "14:00",
-      imgURL: "https://images.cdn.yle.fi/image/upload/ar_1.5,c_fill,g_faces,h_424,w_636/dpr_1.0/q_auto:eco/f_auto/fl_lossy/v1730020850/39-1370034671e057b2ad9e"
-    },
-    {
-      id: 8,
-      title: "Epäilty terrori-isku Israelissa – yksi kuoli ja kymmeniä loukkaantui",
-      subTitle: "Haaretz-lehden mukaan väkijoukkoon ajo tapahtui lähellä Israelin tiedustelutukikohtaa.",
-      newsText: "Glilotissa Keski-Israelissa yksi ihminen on kuollut ja kymmeniä loukkaantunut kuorma-auton törmättyä bussipysäkille sunnuntaina, kertoo alueen pelastuspalvelu. Haaretz-lehden mukaan väkijoukkoon ajo tapahtui noin kello 10 aamulla, lähellä Israelin tiedustelutukikohtaa. Israelin poliisin mukaan kuorma-auto törmäsi myös pysäkillä seisoneeseen bussiin. Poliisin mukaan yksi ihminen kuoli myöhemmin törmäyksessä saamiinsa vammoihin. Lisäksi noin 40 kerrotaan loukkaantuneen. Poliisin mukaan paikalla olleet siviilit ampuivat kuorma-auton kuljettajan ja ”neutralisoivat” hänet. Haaretz kertoo poliisin tutkivan tapahtunutta terrori-iskuna, mutta selvittävän myös muita mahdollisia motiiveja. Äärijärjestö Hamas on sunnuntaina antanut lausunnon, jossa kuvattiin ”sankarillisen törmäyshyökkäyksen” lähellä Israelin tiedustelutukokohtaa ”olleen vastaus sionistisen miehityksen palestiinalaisia vastaan tekemiin rikoksiin”. Sunnuntaina Israelissa sattui myös toinen, erillinen välikohtaus lähellä Jerusalemia, jossa Israelin sotilaat ampuivat miehen, joka yritti puukottaa heitä ”terrorismin vastaisessa” operaatiossa. Israelin armeija on kuvannut puukotusyritystä ”terroriteoksi.”",
-      timestamp: "15:00",
-      imgURL: "https://images.cdn.yle.fi/image/upload/ar_1.5,c_fill,g_faces,h_424,w_636/dpr_1.0/q_auto:eco/f_auto/fl_lossy/v1730020850/39-1370034671e057b2ad9e"
-    },
+      {
+        "id": 4,
+        "title": "Sähkön hinta laskee Suomessa tänä marraskuussa sääolojen vuoksi",
+        "subTitle": "Sateiset syksyn päivät tuovat helpotusta energiakustannuksiin.",
+        "newsText": "Marraskuun alussa sähkön hinta on laskenut merkittävästi Suomessa kiitos runsaille sateille, jotka ovat lisänneet vesivarantoja. Tämä kehitys tarkoittaa huomattavia säästöjä sekä kotitalouksille että yrityksille, jotka kamppailivat viime vuoden korkean energian hinnan kanssa. \n Energiateollisuus on kiittänyt suotuisia sääolosuhteita, mutta muistuttaa, että ilmastonmuutos voi tehdä talvista entistä arvaamattomampia, jolloin hinta voi vaihdella. \n Sähköyhtiöt ovat valmiita tarvittaessa sopeutumaan nopeasti muuttuviin sääolosuhteisiin, ja monet perheet ovat nyt jo tunteneet eron sähkölaskuissaan.",
+        "timestamp": "9:00",
+        "newsGivenBy": "Energiatiedote",
+        "imgURL": "https://im.mtvuutiset.fi/image/8498928/landscape16_9/1024/576/301494721960ef9bb90bfc51005a73bf/II/sahko-2.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Helsingin uudet raitiovaunut otetaan käyttöön ympäristöystävällisempinä",
+        "subTitle": "Kaupungin uudet vaunut parantavat liikenteen sujuvuutta.",
+        "newsText": "Helsingin kaupungin uusimmat raitiovaunut on suunniteltu vähentämään energiankulutusta ja siten pienentämään hiilijalanjälkeä. Näissä vaunuissa on enemmän tilaa matkustajille ja ne on varustettu uusimmalla teknologialla, joka tekee niistä tehokkaita ja hiljaisempia. \n Uudistus on osa laajempaa kaupunginliikenteen modernisointia, jonka tavoitteena on vähentää riippuvuutta fossiilisista polttoaineista. \n Liikennelaitoksen mukaan uudet raitiovaunut voivat vähentää liikenteen päästöjä jopa 20 prosenttia tulevina vuosina.",
+        "timestamp": "10:30",
+        "newsGivenBy": "HSL",
+        "imgURL": "https://ym.fi/documents/1410903/39510183/_11A5262.jpg/eef138d1-97c6-9c59-7a56-7a53b69fcaf6?t=1681909643256"
+      },
+      {
+        "id": 6,
+        "title": "Koronatilanne paranee Suomessa syksyn aikana, tartunnat vähenevät",
+        "subTitle": "Suomessa koronavirustapaukset ovat laskusuunnassa.",
+        "newsText": "Terveyden ja hyvinvoinnin laitos on ilmoittanut, että koronatilanne on parantunut huomattavasti viimeisten viikkojen aikana. Tartuntamäärien lasku johtuu osittain korkeasta rokotekattavuudesta ja varotoimien noudattamisesta. \n Vaikka tilanne näyttää hyvältä, terveysviranomaiset suosittelevat edelleen varovaisuutta, erityisesti sisätiloissa järjestettävissä suurissa tapahtumissa. \n Terveydenhuollon asiantuntijat seuraavat tilannetta tarkasti ja ovat valmiina ryhtymään toimenpiteisiin, jos uusia virusmuunnoksia ilmestyy.",
+        "timestamp": "11:00",
+        "newsGivenBy": "THL",
+        "imgURL": "https://img.ilcdn.fi/62IYhYIqAwb7oIlBaGWz_fZ18P0=/full-fit-in/920x0/img-s3.ilcdn.fi/b8716bebb343d6e6215765d8144833c12b5295fe683e91d4c6c2387d96ae1320.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Ensimmäinen ensilumi satoi Lappiin ja aiheuttaa talvirengaskauden",
+        "subTitle": "Talvirenkaat suositellaan vaihtamaan ajoissa liukkauden vuoksi.",
+        "newsText": "Lapissa talven ensimmäiset lumihiutaleet ovat saaneet autoilijat vaihtamaan talvirenkaisiin, mikä on paikoin lisännyt kysyntää rengaspalveluissa. Liikenneturva kehottaa kaikkia Lapin alueella liikkuvia vaihtamaan talvirenkaat ajoissa liukastumisten ja kolareiden välttämiseksi. \n Etelä-Suomessa odotetaan talvirengaskauden alkavan lähiviikkoina, mutta turvallisuuden vuoksi monet ovat jo päättäneet hankkia talvirenkaat ennakkoon. \n Paikalliset poliisiviranomaiset ovat myös tehostaneet liikenteen valvontaa varmistamaan, että kaikki noudattavat turvallisuusmääräyksiä.",
+        "timestamp": "12:00",
+        "newsGivenBy": "Liikenneturva",
+        "imgURL": "https://arcticguesthouseandigloos.com/wp-content/uploads/2021/09/Lapland-first-snow.jpg"
+      },
+      {
+        "id": 8,
+        "title": "Suomi parantaa elokuvatuotantotukeaan houkutellakseen ulkomaisia tuotantoja",
+        "subTitle": "Uudet tukipaketit tekevät Suomesta elokuvatuotantojen houkuttelevamman.",
+        "newsText": "Suomen hallitus on korottanut elokuvatuotantotukeaan osana kansainvälisen markkinoinnin strategiaa. Tämä avaa uusia mahdollisuuksia kansainvälisille tuotannoille tulla kuvaamaan elokuviaan Suomen kauniisiin ja monipuolisiin maisemiin. \n Suomen elokuvateollisuus on viime vuosina kasvanut, ja uusi tuki tekee maasta entistä kilpailukykyisemmän muiden Euroopan maiden joukossa. \n Tämä päätös tuo mahdollisuuksia myös kotimaisille tuotantoyhtiöille ja edistää kulttuurialan työpaikkojen luomista.",
+        "timestamp": "13:15",
+        "newsGivenBy": "Suomen Elokuvasäätiö",
+        "imgURL": "https://images.unsplash.com/photo-1503264116251-35a269479413"
+      },    
     {
       id: 9,
       title: "Epäilty terrori-isku Israelissa – yksi kuoli ja kymmeniä loukkaantui",
       subTitle: "Haaretz-lehden mukaan väkijoukkoon ajo tapahtui lähellä Israelin tiedustelutukikohtaa.",
-      newsText: "Glilotissa Keski-Israelissa yksi ihminen on kuollut ja kymmeniä loukkaantunut kuorma-auton törmättyä bussipysäkille sunnuntaina, kertoo alueen pelastuspalvelu. Haaretz-lehden mukaan väkijoukkoon ajo tapahtui noin kello 10 aamulla, lähellä Israelin tiedustelutukikohtaa. Israelin poliisin mukaan kuorma-auto törmäsi myös pysäkillä seisoneeseen bussiin. Poliisin mukaan yksi ihminen kuoli myöhemmin törmäyksessä saamiinsa vammoihin. Lisäksi noin 40 kerrotaan loukkaantuneen. Poliisin mukaan paikalla olleet siviilit ampuivat kuorma-auton kuljettajan ja ”neutralisoivat” hänet. Haaretz kertoo poliisin tutkivan tapahtunutta terrori-iskuna, mutta selvittävän myös muita mahdollisia motiiveja. Äärijärjestö Hamas on sunnuntaina antanut lausunnon, jossa kuvattiin ”sankarillisen törmäyshyökkäyksen” lähellä Israelin tiedustelutukokohtaa ”olleen vastaus sionistisen miehityksen palestiinalaisia vastaan tekemiin rikoksiin”. Sunnuntaina Israelissa sattui myös toinen, erillinen välikohtaus lähellä Jerusalemia, jossa Israelin sotilaat ampuivat miehen, joka yritti puukottaa heitä ”terrorismin vastaisessa” operaatiossa. Israelin armeija on kuvannut puukotusyritystä ”terroriteoksi.”",
-      timestamp: "16:00",
-      imgURL: "https://images.cdn.yle.fi/image/upload/ar_1.5,c_fill,g_faces,h_424,w_636/dpr_1.0/q_auto:eco/f_auto/fl_lossy/v1730020850/39-1370034671e057b2ad9e"
-    },
-    {
-      id: 10,
-      title: "Epäilty terrori-isku Israelissa – yksi kuoli ja kymmeniä loukkaantui",
-      subTitle: "Haaretz-lehden mukaan väkijoukkoon ajo tapahtui lähellä Israelin tiedustelutukikohtaa.",
-      newsText: "Glilotissa Keski-Israelissa yksi ihminen on kuollut ja kymmeniä loukkaantunut kuorma-auton törmättyä bussipysäkille sunnuntaina, kertoo alueen pelastuspalvelu. Haaretz-lehden mukaan väkijoukkoon ajo tapahtui noin kello 10 aamulla, lähellä Israelin tiedustelutukikohtaa. Israelin poliisin mukaan kuorma-auto törmäsi myös pysäkillä seisoneeseen bussiin. Poliisin mukaan yksi ihminen kuoli myöhemmin törmäyksessä saamiinsa vammoihin. Lisäksi noin 40 kerrotaan loukkaantuneen. Poliisin mukaan paikalla olleet siviilit ampuivat kuorma-auton kuljettajan ja ”neutralisoivat” hänet. Haaretz kertoo poliisin tutkivan tapahtunutta terrori-iskuna, mutta selvittävän myös muita mahdollisia motiiveja. Äärijärjestö Hamas on sunnuntaina antanut lausunnon, jossa kuvattiin ”sankarillisen törmäyshyökkäyksen” lähellä Israelin tiedustelutukokohtaa ”olleen vastaus sionistisen miehityksen palestiinalaisia vastaan tekemiin rikoksiin”. Sunnuntaina Israelissa sattui myös toinen, erillinen välikohtaus lähellä Jerusalemia, jossa Israelin sotilaat ampuivat miehen, joka yritti puukottaa heitä ”terrorismin vastaisessa” operaatiossa. Israelin armeija on kuvannut puukotusyritystä ”terroriteoksi.”",
-      timestamp: "17:00",
-      imgURL: "https://images.cdn.yle.fi/image/upload/ar_1.5,c_fill,g_faces,h_424,w_636/dpr_1.0/q_auto:eco/f_auto/fl_lossy/v1730020850/39-1370034671e057b2ad9e"
-    },
-    {
-      id: 11,
-      title: "Epäilty terrori-isku Israelissa – yksi kuoli ja kymmeniä loukkaantui",
-      subTitle: "Haaretz-lehden mukaan väkijoukkoon ajo tapahtui lähellä Israelin tiedustelutukikohtaa.",
-      newsText: "Glilotissa Keski-Israelissa yksi ihminen on kuollut ja kymmeniä loukkaantunut kuorma-auton törmättyä bussipysäkille sunnuntaina, kertoo alueen pelastuspalvelu. Haaretz-lehden mukaan väkijoukkoon ajo tapahtui noin kello 10 aamulla, lähellä Israelin tiedustelutukikohtaa. Israelin poliisin mukaan kuorma-auto törmäsi myös pysäkillä seisoneeseen bussiin. Poliisin mukaan yksi ihminen kuoli myöhemmin törmäyksessä saamiinsa vammoihin. Lisäksi noin 40 kerrotaan loukkaantuneen. Poliisin mukaan paikalla olleet siviilit ampuivat kuorma-auton kuljettajan ja ”neutralisoivat” hänet. Haaretz kertoo poliisin tutkivan tapahtunutta terrori-iskuna, mutta selvittävän myös muita mahdollisia motiiveja. Äärijärjestö Hamas on sunnuntaina antanut lausunnon, jossa kuvattiin ”sankarillisen törmäyshyökkäyksen” lähellä Israelin tiedustelutukokohtaa ”olleen vastaus sionistisen miehityksen palestiinalaisia vastaan tekemiin rikoksiin”. Sunnuntaina Israelissa sattui myös toinen, erillinen välikohtaus lähellä Jerusalemia, jossa Israelin sotilaat ampuivat miehen, joka yritti puukottaa heitä ”terrorismin vastaisessa” operaatiossa. Israelin armeija on kuvannut puukotusyritystä ”terroriteoksi.”",
-      timestamp: "18:00",
-      imgURL: "https://images.cdn.yle.fi/image/upload/ar_1.5,c_fill,g_faces,h_424,w_636/dpr_1.0/q_auto:eco/f_auto/fl_lossy/v1730020850/39-1370034671e057b2ad9e"
-    },
-    {
-      id: 12,
-      title: "Epäilty terrori-isku Israelissa – yksi kuoli ja kymmeniä loukkaantui",
-      subTitle: "Haaretz-lehden mukaan väkijoukkoon ajo tapahtui lähellä Israelin tiedustelutukikohtaa.",
-      newsText: "Glilotissa Keski-Israelissa yksi ihminen on kuollut ja kymmeniä loukkaantunut kuorma-auton törmättyä bussipysäkille sunnuntaina, kertoo alueen pelastuspalvelu. Haaretz-lehden mukaan väkijoukkoon ajo tapahtui noin kello 10 aamulla, lähellä Israelin tiedustelutukikohtaa. Israelin poliisin mukaan kuorma-auto törmäsi myös pysäkillä seisoneeseen bussiin. Poliisin mukaan yksi ihminen kuoli myöhemmin törmäyksessä saamiinsa vammoihin. Lisäksi noin 40 kerrotaan loukkaantuneen. Poliisin mukaan paikalla olleet siviilit ampuivat kuorma-auton kuljettajan ja ”neutralisoivat” hänet. Haaretz kertoo poliisin tutkivan tapahtunutta terrori-iskuna, mutta selvittävän myös muita mahdollisia motiiveja. Äärijärjestö Hamas on sunnuntaina antanut lausunnon, jossa kuvattiin ”sankarillisen törmäyshyökkäyksen” lähellä Israelin tiedustelutukokohtaa ”olleen vastaus sionistisen miehityksen palestiinalaisia vastaan tekemiin rikoksiin”. Sunnuntaina Israelissa sattui myös toinen, erillinen välikohtaus lähellä Jerusalemia, jossa Israelin sotilaat ampuivat miehen, joka yritti puukottaa heitä ”terrorismin vastaisessa” operaatiossa. Israelin armeija on kuvannut puukotusyritystä ”terroriteoksi.”",
+      newsText: "Glilotissa Keski-Israelissa yksi ihminen on kuollut ja kymmeniä loukkaantunut kuorma-auton törmättyä bussipysäkille sunnuntaina, kertoo alueen pelastuspalvelu. Haaretz-lehden mukaan väkijoukkoon ajo tapahtui noin kello 10 aamulla, lähellä Israelin tiedustelutukikohtaa. \n Israelin poliisin mukaan kuorma-auto törmäsi myös pysäkillä seisoneeseen bussiin. Poliisin mukaan yksi ihminen kuoli myöhemmin törmäyksessä saamiinsa vammoihin. \n Lisäksi noin 40 kerrotaan loukkaantuneen. Poliisin mukaan paikalla olleet siviilit ampuivat kuorma-auton kuljettajan ja ”neutralisoivat” hänet. Haaretz kertoo poliisin tutkivan tapahtunutta terrori-iskuna, mutta selvittävän myös muita mahdollisia motiiveja. Äärijärjestö Hamas on sunnuntaina antanut lausunnon, jossa kuvattiin ”sankarillisen törmäyshyökkäyksen” lähellä Israelin tiedustelutukokohtaa ”olleen vastaus sionistisen miehityksen palestiinalaisia vastaan tekemiin rikoksiin”. Sunnuntaina Israelissa sattui myös toinen, erillinen välikohtaus lähellä Jerusalemia, jossa Israelin sotilaat ampuivat miehen, joka yritti puukottaa heitä ”terrorismin vastaisessa” operaatiossa. Israelin armeija on kuvannut puukotusyritystä ”terroriteoksi.”",
       timestamp: "19:00",
       imgURL: "https://images.cdn.yle.fi/image/upload/ar_1.5,c_fill,g_faces,h_424,w_636/dpr_1.0/q_auto:eco/f_auto/fl_lossy/v1730020850/39-1370034671e057b2ad9e"
+    },
+    {
+      "id": 10,
+      "title": "Suomen matkailualan kasvu kiihtyy – ulkomaiset turistit palaavat pohjoiseen",
+      "subTitle": "Lappi houkuttelee matkailijoita ainutlaatuisilla elämyksillään.",
+      "newsText": "Suomen matkailuala on kokenut ennennäkemätöntä kasvua viime kuukausina, kun ulkomaiset turistit ovat jälleen löytäneet tiensä pohjoiseen. Lapin talvikausi näyttää tänä vuonna lupaavalta, sillä majoitusvaraukset ja retkipalvelut ovat kasvaneet yli 30 prosenttia viime vuoteen verrattuna. \n Alueen matkailutoimijat ovat valmistautuneet vilkkaaseen kauteen ja laajentaneet palveluitaan kattaakseen kysyntää. Esimerkiksi uusilla revontulien katseluretkillä on tarjolla ainutlaatuisia mahdollisuuksia, joissa vierailijat voivat nauttia suomalaisesta luonnosta sekä paikallisista ruoista. \n Paikalliset yrittäjät ovat kiittäneet Suomen hallitusta matkailualan tukitoimista, jotka ovat auttaneet matkailijoita löytämään maahan palaamisensa jälkeen helposti turvallisia vaihtoehtoja.",
+      "timestamp": "08:45",
+      "newsGivenBy": "Matkailu-uutiset",
+      "imgURL": "https://cdn.pixabay.com/photo/2016/02/13/12/26/aurora-1197753_960_720.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Suomalaiset opiskelijat kehittävät uudenlaista teknologiaa kaupunkiliikenteen sujuvoittamiseen",
+      "subTitle": "Innovatiivinen ratkaisu kerää jo kiinnostusta suurilta kaupungeilta.",
+      "newsText": "Ryhmä suomalaisia opiskelijoita on kehittänyt uudenlaisen mobiilisovelluksen, joka helpottaa kaupunkilaisten liikkumista ja vähentää liikenteen ruuhkautumista. Sovellus hyödyntää reaaliaikaista tietoa ja koneoppimista optimoidakseen kaupunkiliikenteen ohjausta, mikä voi merkittävästi lyhentää työmatkoihin kuluvaa aikaa. \n Tämän lisäksi sovellus auttaa paikallisia viranomaisia suunnittelemaan liikenteenohjausta, mikä on erityisen tärkeää suurkaupungeissa, joissa liikenteen sujuvuudella on huomattava vaikutus ilmastonmuutoksen torjunnassa. \n Projektin vetäjä, Helsingin yliopiston tutkijatohtori, uskoo, että innovaatio voisi laajentua tulevina vuosina useisiin Euroopan maihin.",
+      "timestamp": "10:15",
+      "newsGivenBy": "Tiede ja teknologia",
+      "imgURL": "https://cdn.pixabay.com/photo/2016/01/19/17/48/traffic-1149940_960_720.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Ympäristöaktivistit kehottavat Suomea lisäämään metsien suojelupinta-alaa",
+      "subTitle": "Luonnon monimuotoisuuden säilyttäminen on keskeinen tavoite.",
+      "newsText": "Useat ympäristöjärjestöt ovat vedonneet Suomen hallitukseen, jotta se lisäisi suojeltujen metsien määrää merkittävästi. Aktivistien mukaan nykyiset suojelutoimet eivät riitä turvaamaan arvokkaita ekosysteemejä ja lajien monimuotoisuutta. \n Metsien käyttö on ollut pitkään kiivaan keskustelun aiheena Suomessa, ja hallitus on saanut painostusta useilta kansainvälisiltä tahoilta. \n Suunnitteilla on uusia ohjelmia, jotka tukisivat sekä metsien suojelua että metsätalouden kestävyyttä. Suomen luonnonperintösäätiön mukaan kestävät suojelutoimet ovat tärkeä osa ilmastotavoitteiden saavuttamista ja kansainvälistä yhteistyötä ympäristön suojelussa.",
+      "timestamp": "11:30",
+      "newsGivenBy": "Ympäristötiedote",
+      "imgURL": "https://cdn.pixabay.com/photo/2016/11/21/15/16/nature-1845637_960_720.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Koulutuksen digitalisaatio Suomessa – uudet mahdollisuudet ja haasteet",
+      "subTitle": "Opetuksen digitalisointi avaa uusia ovia oppimiselle.",
+      "newsText": "Suomessa on otettu suuria harppauksia opetuksen digitalisaatiossa, ja monet koulut ovat ottaneet käyttöön virtuaalisia oppimisympäristöjä ja digitaalisia resursseja. Uusien teknologioiden käyttöönotto on auttanut erityisesti etäopetuksessa, mutta myös tuonut mukanaan uusia haasteita. \n Opettajat ja oppilaat ovat joutuneet sopeutumaan nopeasti muuttuneeseen oppimisympäristöön. Monet opettajat kokevat tarvetta lisäkoulutukselle, jotta voivat tehokkaasti hyödyntää digitaalisia resursseja oppimisprosessissa. \n Suomen opetusministeriö suunnittelee lisäämään resursseja digitaalisen opetuksen kehittämiseen ja tukemaan opettajia uusien opetusmenetelmien omaksumisessa.",
+      "timestamp": "12:45",
+      "newsGivenBy": "Koulutus ja kehitys",
+      "imgURL": "https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849828_960_720.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Suomen start-up -yritykset kasvavat vauhdilla teknologia-alan kehittyessä",
+      "subTitle": "Kansainvälinen kiinnostus suomalaista innovointia kohtaan lisääntyy.",
+      "newsText": "Suomen start-up -sektori on kokenut viime vuosina kasvua teknologian ja innovoinnin kehittyessä, ja monet suomalaiset yritykset ovat saaneet kansainvälistä huomiota uusista ratkaisuistaan. Tähän kasvuun on vaikuttanut myös valtion tuki yrityksille, jotka tähtäävät globaalien ongelmien ratkaisuun. \n Useat suomalaiset teknologiayritykset ovat erikoistuneet erityisesti tekoälyyn ja data-analytiikkaan, mikä on houkutellut sijoittajia ympäri maailman. \n Kansainvälisen rahoituksen myötä suomalaisilla yrityksillä on mahdollisuus laajentaa markkinoitaan entisestään, ja monet ovat asettaneet tavoitteekseen uusien työpaikkojen luomisen tulevien vuosien aikana.",
+      "timestamp": "14:20",
+      "newsGivenBy": "Teknologia ja yritys",
+      "imgURL": "https://cdn.pixabay.com/photo/2016/01/19/15/05/student-1149669_960_720.jpg"
     }
   ],
   russiaWarNews: [
