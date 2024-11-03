@@ -56,5 +56,5 @@ module.exports = {
     hot: true, // Включить горячую замену модулей
     historyApiFallback: true, // Для поддержки маршрутизации
   },
-  mode: 'development', // Режим разработки
+  mode: 'development',
 };

@@ -397,9 +397,12 @@ header {
 
   .all__news, .centred__detailed-news {
     display: block;
+    max-width: 100%;
     padding: 10px;
   }
-
+  .centred__contentnews {
+    max-width: 100%!important;
+  }
   .rightnow {
     margin-bottom: 3rem;
   }
