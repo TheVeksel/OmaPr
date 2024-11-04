@@ -41,7 +41,7 @@ const data = {
       newsText: "Ukrainan presidentti Volodymyr Zelenskyi tapaa Pohjoismaiden johtajia tiistaina Islannin Reykjavikissa, kertoo Pohjoismaiden neuvosto tiedotteessaan. Zelenskyi osallistuu vieraspuhujana Pohjoismaiden neuvoston istuntoon. \n Lisäksi hän tapaa Pohjoismaiden pääministerit. Zelenskyi ja pääministerit pitävät kahdenvälisiä kokouksia ja yhteisen lehdistötilaisuuden. Suomesta Pohjoismaiden neuvoston kokoukseen osallistuvat pääministeri Petteri Orpo (kok.), pohjoismaisesta yhteistyöstä vastaava opetusministeri Anders Adlercreutz (r.) sekä tiede- ja kulttuuriministeri Sari Multala (kok.). Pohjoismaiden neuvoston istunto pidetään Reykjavikissa 28.–31.10.",
       timestamp: "9:00",
       newsGivenBy: "Joukkoviestin",
-      imgURL: "https://images.cdn.yle.fi/image/upload/ar_1.503006012024048,c_fill,g_faces,h_423,w_636/dpr_1.0/q_auto:eco/f_auto/fl_lossy/v1706785954/39-123671365bb7c667decc"
+      imgURL: "https://i.media.fi/incoming/ded5c9/9383513.jpg/alternates/OG_IMAGE_ITA_SAVO/9383513.jpg"
     },
     {
       id: 3,
@@ -103,7 +103,7 @@ const data = {
       subTitle: "Haaretz-lehden mukaan väkijoukkoon ajo tapahtui lähellä Israelin tiedustelutukikohtaa.",
       newsText: "Glilotissa Keski-Israelissa yksi ihminen on kuollut ja kymmeniä loukkaantunut kuorma-auton törmättyä bussipysäkille sunnuntaina, kertoo alueen pelastuspalvelu. Haaretz-lehden mukaan väkijoukkoon ajo tapahtui noin kello 10 aamulla, lähellä Israelin tiedustelutukikohtaa. \n Israelin poliisin mukaan kuorma-auto törmäsi myös pysäkillä seisoneeseen bussiin. Poliisin mukaan yksi ihminen kuoli myöhemmin törmäyksessä saamiinsa vammoihin. \n Lisäksi noin 40 kerrotaan loukkaantuneen. Poliisin mukaan paikalla olleet siviilit ampuivat kuorma-auton kuljettajan ja ”neutralisoivat” hänet. Haaretz kertoo poliisin tutkivan tapahtunutta terrori-iskuna, mutta selvittävän myös muita mahdollisia motiiveja. Äärijärjestö Hamas on sunnuntaina antanut lausunnon, jossa kuvattiin ”sankarillisen törmäyshyökkäyksen” lähellä Israelin tiedustelutukokohtaa ”olleen vastaus sionistisen miehityksen palestiinalaisia vastaan tekemiin rikoksiin”. Sunnuntaina Israelissa sattui myös toinen, erillinen välikohtaus lähellä Jerusalemia, jossa Israelin sotilaat ampuivat miehen, joka yritti puukottaa heitä ”terrorismin vastaisessa” operaatiossa. Israelin armeija on kuvannut puukotusyritystä ”terroriteoksi.”",
       timestamp: "19:00",
-      imgURL: "https://images.cdn.yle.fi/image/upload/ar_1.5,c_fill,g_faces,h_424,w_636/dpr_1.0/q_auto:eco/f_auto/fl_lossy/v1730020850/39-1370034671e057b2ad9e"
+      imgURL: "https://im.mtvuutiset.fi/image/8992464/landscape16_9/1600/900/bd5ef40c92434b7849ddc8d3bd5e59c/ZW/SomeSharing/aop-tel-aviv-rajahdys.jpg"
     },
     {
       "id": 10,

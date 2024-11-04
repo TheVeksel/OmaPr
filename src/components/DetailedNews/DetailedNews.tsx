@@ -75,6 +75,7 @@ export default function DetailedNews(): JSX.Element | null {
         <p className="detailed__news-timeago">{news.timestamp}</p>
         <div>{formatText(news.newsText)}</div>
       </div>
+      <div className="center__bar"></div>
       <SidedContent />
     </section>
   );

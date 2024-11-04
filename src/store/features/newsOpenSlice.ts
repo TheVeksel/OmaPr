@@ -16,14 +16,14 @@ const newsOpenSlice = createSlice({
     setOpenNewsId(state, action: PayloadAction<number | null>) {
       state.openNewsId = action.payload;
       if (action.payload !== null) {
-        Cookies.set('openNewsId', action.payload.toString(), { expires: 7 }); // Сохраняем в куки на 7 дней
+        Cookies.set('openNewsId', action.payload.toString(), { expires: 7, sameSite: 'Lax', secure: true });
       } else {
-        Cookies.remove('openNewsId'); // Удаляем из куки
+        Cookies.remove('openNewsId');
       }
     },
     resetOpenNewsId(state) {
       state.openNewsId = null; 
-      Cookies.remove('openNewsId'); // Удаляем из куки
+      Cookies.remove('openNewsId'); 
     },
   },
 });
