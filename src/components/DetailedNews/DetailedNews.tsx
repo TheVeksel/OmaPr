@@ -46,7 +46,7 @@ export default function DetailedNews(): JSX.Element | null {
       }
     };
     fetchNews();
-  }, [id]);
+  }, [dispatch]);
 
   const formatText = (text: string) => {
     const paragraphs = text.split(/\n+/);

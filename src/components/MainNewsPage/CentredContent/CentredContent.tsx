@@ -3,7 +3,7 @@ import RightNowSection from "./RightNowSection";
 
 export default function CentredContent(): JSX.Element {
   return (
-      <div>
+      <div className="centred__news">
         <RightNowSection id={1}/>
         <MainPageCenterNews id={5}/>
         <MainPageCenterNews id={6}/>
