@@ -397,7 +397,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 70%;
+    max-width: 60%;
   }
 
   &__about {
@@ -415,10 +415,10 @@ header {
 
   &__img-box {
     flex-shrink: 0;
-    width: 30%;
+    width: 40%;
     max-width: 200px;
     position: relative;
-    border-radius: 5px;
+    border-radius: 4px;
     overflow: hidden;
     margin-left: 16px;
   }
@@ -485,7 +485,7 @@ header {
     display: none !important;
   }
 }
-@media print, (min-width: 1024px) {
+@media (min-width: 1024px) {
   .all__news {
     margin: 40px auto;
     padding: 0px 12px;
