@@ -59,7 +59,8 @@ const data = {
         "newsText": "Marraskuun alussa sähkön hinta on laskenut merkittävästi Suomessa kiitos runsaille sateille, jotka ovat lisänneet vesivarantoja. Tämä kehitys tarkoittaa huomattavia säästöjä sekä kotitalouksille että yrityksille, jotka kamppailivat viime vuoden korkean energian hinnan kanssa. \n Energiateollisuus on kiittänyt suotuisia sääolosuhteita, mutta muistuttaa, että ilmastonmuutos voi tehdä talvista entistä arvaamattomampia, jolloin hinta voi vaihdella. \n Sähköyhtiöt ovat valmiita tarvittaessa sopeutumaan nopeasti muuttuviin sääolosuhteisiin, ja monet perheet ovat nyt jo tunteneet eron sähkölaskuissaan.",
         "timestamp": "9:00",
         "newsGivenBy": "Energiatiedote",
-        "imgURL": "https://im.mtvuutiset.fi/image/8498928/landscape16_9/1024/576/301494721960ef9bb90bfc51005a73bf/II/sahko-2.jpg"
+        "imgURL": "https://im.mtvuutiset.fi/image/8498928/landscape16_9/1024/576/301494721960ef9bb90bfc51005a73bf/II/sahko-2.jpg",
+        "about": "Sähkö"
       },
       {
         "id": 5,
@@ -68,7 +69,8 @@ const data = {
         "newsText": "Helsingin kaupungin uusimmat raitiovaunut on suunniteltu vähentämään energiankulutusta ja siten pienentämään hiilijalanjälkeä. Näissä vaunuissa on enemmän tilaa matkustajille ja ne on varustettu uusimmalla teknologialla, joka tekee niistä tehokkaita ja hiljaisempia. \n Uudistus on osa laajempaa kaupunginliikenteen modernisointia, jonka tavoitteena on vähentää riippuvuutta fossiilisista polttoaineista. \n Liikennelaitoksen mukaan uudet raitiovaunut voivat vähentää liikenteen päästöjä jopa 20 prosenttia tulevina vuosina.",
         "timestamp": "10:30",
         "newsGivenBy": "HSL",
-        "imgURL": "https://ym.fi/documents/1410903/39510183/_11A5262.jpg/eef138d1-97c6-9c59-7a56-7a53b69fcaf6?t=1681909643256"
+        "imgURL": "https://ym.fi/documents/1410903/39510183/_11A5262.jpg/eef138d1-97c6-9c59-7a56-7a53b69fcaf6?t=1681909643256",
+        "about":"Helsinki"
       },
       {
         "id": 6,
@@ -77,7 +79,8 @@ const data = {
         "newsText": "Terveyden ja hyvinvoinnin laitos on ilmoittanut, että koronatilanne on parantunut huomattavasti viimeisten viikkojen aikana. Tartuntamäärien lasku johtuu osittain korkeasta rokotekattavuudesta ja varotoimien noudattamisesta. \n Vaikka tilanne näyttää hyvältä, terveysviranomaiset suosittelevat edelleen varovaisuutta, erityisesti sisätiloissa järjestettävissä suurissa tapahtumissa. \n Terveydenhuollon asiantuntijat seuraavat tilannetta tarkasti ja ovat valmiina ryhtymään toimenpiteisiin, jos uusia virusmuunnoksia ilmestyy.",
         "timestamp": "11:00",
         "newsGivenBy": "THL",
-        "imgURL": "https://img.ilcdn.fi/62IYhYIqAwb7oIlBaGWz_fZ18P0=/full-fit-in/920x0/img-s3.ilcdn.fi/b8716bebb343d6e6215765d8144833c12b5295fe683e91d4c6c2387d96ae1320.jpg"
+        "imgURL": "https://img.ilcdn.fi/62IYhYIqAwb7oIlBaGWz_fZ18P0=/full-fit-in/920x0/img-s3.ilcdn.fi/b8716bebb343d6e6215765d8144833c12b5295fe683e91d4c6c2387d96ae1320.jpg",
+        "about":"Koronatilanne"
       },
       {
         "id": 7,
@@ -103,7 +106,8 @@ const data = {
       subTitle: "Haaretz-lehden mukaan väkijoukkoon ajo tapahtui lähellä Israelin tiedustelutukikohtaa.",
       newsText: "Glilotissa Keski-Israelissa yksi ihminen on kuollut ja kymmeniä loukkaantunut kuorma-auton törmättyä bussipysäkille sunnuntaina, kertoo alueen pelastuspalvelu. Haaretz-lehden mukaan väkijoukkoon ajo tapahtui noin kello 10 aamulla, lähellä Israelin tiedustelutukikohtaa. \n Israelin poliisin mukaan kuorma-auto törmäsi myös pysäkillä seisoneeseen bussiin. Poliisin mukaan yksi ihminen kuoli myöhemmin törmäyksessä saamiinsa vammoihin. \n Lisäksi noin 40 kerrotaan loukkaantuneen. Poliisin mukaan paikalla olleet siviilit ampuivat kuorma-auton kuljettajan ja ”neutralisoivat” hänet. Haaretz kertoo poliisin tutkivan tapahtunutta terrori-iskuna, mutta selvittävän myös muita mahdollisia motiiveja. Äärijärjestö Hamas on sunnuntaina antanut lausunnon, jossa kuvattiin ”sankarillisen törmäyshyökkäyksen” lähellä Israelin tiedustelutukokohtaa ”olleen vastaus sionistisen miehityksen palestiinalaisia vastaan tekemiin rikoksiin”. Sunnuntaina Israelissa sattui myös toinen, erillinen välikohtaus lähellä Jerusalemia, jossa Israelin sotilaat ampuivat miehen, joka yritti puukottaa heitä ”terrorismin vastaisessa” operaatiossa. Israelin armeija on kuvannut puukotusyritystä ”terroriteoksi.”",
       timestamp: "19:00",
-      imgURL: "https://im.mtvuutiset.fi/image/8992464/landscape16_9/1600/900/bd5ef40c92434b7849ddc8d3bd5e59c/ZW/SomeSharing/aop-tel-aviv-rajahdys.jpg"
+      imgURL: "https://im.mtvuutiset.fi/image/8992464/landscape16_9/1600/900/bd5ef40c92434b7849ddc8d3bd5e59c/ZW/SomeSharing/aop-tel-aviv-rajahdys.jpg",
+      "about":"Lähi-itä"
     },
     {
       "id": 10,
@@ -149,6 +153,16 @@ const data = {
       "timestamp": "14:20",
       "newsGivenBy": "Teknologia ja yritys",
       "imgURL": "https://cdn.pixabay.com/photo/2016/01/19/15/05/student-1149669_960_720.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Liverpool löylytti Leverkusenia, Milan Real Madridia – Hradeckyn huikea sarja päättyi",
+      "subTitle": "Lukas Hradeckyn edustama Leverkusen kärsi rökäletappion Anfieldillä. Hattutemppuihin pystyivät Sportingin Viktor Gyökeres ja Liverpoolin Luis Diaz.",
+      "newsText": "Liverpool pelasi vaatimattoman avauspuoliskon jalkapallon Mestarien liigassa, mutta oli liikkeellä toisella jaksolla uudella ilmeellä ja lopulta liian kova Lukas Hradeckyn edustamalle Leverkusenille.\n\nHattutempun koonnut Luis Diaz ja Cody Gakpo sinetöivät Liverpoolin 4–0-kotivoiton. Hradecky oli täysin voimaton takaiskumaalien edessä. Liverpool johtaa Mestarien liigaa täydellä 12 pisteellä.\n\nTappio oli Hradeckylle ensimmäinen Leverkusenin paidassa sitten toukokuun 2023. Huuhkajavahdin tappiottomien Leverkusenin pelien sarja päättyi 45 otteluun.\n\nEntiselle Liverpoolin keskikenttäpelaajalle, Leverkusenin nykyiselle valmentajalle Xabi Alonsolle, 42, paluu Anfieldille oli ankea. Hän edusti pelaajaurallaan Liverpoolia vuosina 2004–09.\n\nReal Madrid alamaissa\n\nMilan jatkoi Real Madridin nöyryytyksiä ja päihitti heikkovireisen kotijoukkueen Santiago Bernabeulla maalein 3–1. Edellisessä kotipelissä Real oli ottanut pataan La Ligan jättiläisten kohtaamisessa Barcelonalta 0–4.",
+      "timestamp": "15:20",
+      "newsGivenBy": "Timo Uusitalo",
+      "imgURL": "https://tmssl.akamaized.net//images/foto/galerie/lukas-hradecky-bayer-04-leverkusen-2024-1714970486-135794.jpg?lm=1714970496",
+      "about":"Jalkapallo"
     }
   ],
   russiaWarNews: [
@@ -179,7 +193,7 @@ const data = {
 
 const uploadData = async () => {
   const db = admin.database();
-  const ref = db.ref("news"); // название пути, куда вы хотите загрузить данные
+  const ref = db.ref("news"); 
 
   try {
     await ref.set(data);
