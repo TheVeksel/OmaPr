@@ -1,45 +1,28 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { resetOpenNewsId } from "../../store/features/newsOpenSlice";
 import HeaderMainNews from "./HeaderMainNews";
 import ThirdHeaderPart from "./ThirdHeaderPart";
-
-export interface HeaderMainNewsItem {
-  id: number;
-  theme: string;
-}
+import { HeaderMainNewsItem, fetchHeaderMainNews } from "../../services/thematicNewsService";
 
 export default function Header(): JSX.Element {
   const [headerNews, setHeaderNews] = useState<HeaderMainNewsItem[]>([]);
-  const dispatch = useDispatch();
-
-  const handleLogoClick = () => {
-    dispatch(resetOpenNewsId()); // Сбрасываем состояние открытой новости при клике на логотип
-  };
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(
-          "https://yle-react-default-rtdb.europe-west1.firebasedatabase.app/news/headerMainThemes.json"
-        );
-        const newsArray = Object.values(response.data) as HeaderMainNewsItem[];
-        setHeaderNews(newsArray);
-      } catch (error) {
-        console.error("Error fetching data:", error);
+    const loadNews = async () => {
+      const data = await fetchHeaderMainNews(); 
+      if (data) {
+        setHeaderNews(data);  
       }
     };
 
-    fetchData();
+    loadNews();  
   }, []);
 
   return (
     <div className="header__wraper">
       <header>
         <div className="main">
-          <Link to="/" onClick={handleLogoClick}>
+          <Link to="/">
             <img className="logo" src="/photo/1024x1024.jpg" alt="img" />
             <h3 className="logo__text">Etusivu</h3>
             <div className="bar"></div>

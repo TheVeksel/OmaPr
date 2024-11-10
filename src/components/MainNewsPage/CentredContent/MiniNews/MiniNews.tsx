@@ -1,38 +1,20 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { setOpenNewsId } from "../../../../store/features/newsOpenSlice";
-import axios from "axios";
-
-interface MiniNews {
-  id: number;
-  title: string;
-  subTitle: string;
-  timestamp: string;
-  imgURL: string;
-  newsGivenBy: string;
-  about: string;
-}
+import { fetchAllNews, NewsContent } from "../../../../services/newsService";
 
 interface MiniNewsProps {
   id: number;
 }
 
 export default function MiniNews({ id }: MiniNewsProps): JSX.Element | null {
-  const [news, setMiniNews] = useState<MiniNews | null>(null);
-  const dispatch = useDispatch();
-
-  const handleOpenNews = () => {
-    dispatch(setOpenNewsId(id));
-  };
+  const [news, setMiniNews] = useState<NewsContent | null>(null);  
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(
-          `https://yle-react-default-rtdb.europe-west1.firebasedatabase.app/news/allNews/${id}.json`
-        );
-        setMiniNews(response.data);
+        const allNews = await fetchAllNews();  
+        const selectedNews = allNews.find((newsItem) => newsItem.id === id);  
+        setMiniNews(selectedNews || null);  
       } catch (error) {
         console.error("Error fetching data", error);
       }
@@ -42,11 +24,11 @@ export default function MiniNews({ id }: MiniNewsProps): JSX.Element | null {
   }, [id]);
 
   if (!news) {
-    return null;
+    return null;  
   }
 
   return (
-    <Link to={`/news/${news.id}`} onClick={handleOpenNews}>
+    <Link to={`/news/${news.id}`}>
       <div className="mininews">
         <div className="mininews__text">
           <p className="mininews__about">{news.about}</p>

@@ -2,13 +2,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import commentsReducer from './features/commentSlice'
 import usersReducer from './features/userSlice'
-import newsOpenReducer from './features/newsOpenSlice';
 
 export const store = configureStore({
   reducer: {
     comments: commentsReducer,
     users: usersReducer,
-    newsOpen: newsOpenReducer,
   },
 });
 

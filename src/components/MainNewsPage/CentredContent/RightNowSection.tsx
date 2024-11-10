@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useDispatch } from "react-redux";
-import { setOpenNewsId } from "../../../store/features/newsOpenSlice";
 
 interface RightNow {
   id: number;
@@ -19,12 +18,6 @@ interface RightNowProps {
 
 export default function RightNowSection({ id }: RightNowProps): JSX.Element | null {
   const [news, setNews] = useState<RightNow | null>(null);
-  const dispatch = useDispatch();
-
-  const handleOpenNews = () => {
-    dispatch(setOpenNewsId(id));
-  };
-
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -41,7 +34,7 @@ export default function RightNowSection({ id }: RightNowProps): JSX.Element | nu
   if (!news) return null
 
   return (
-    <Link to={`/news/${news.id}`} onClick={handleOpenNews}>
+    <Link to={`/news/${news.id}`}>
       <div className="rightnow">
         <div className="rightnow__header">
           <h2 className="redtext">JUURI NYT</h2>

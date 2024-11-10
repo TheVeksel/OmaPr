@@ -1,60 +1,51 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { setOpenNewsId } from "../../../store/features/newsOpenSlice";
-import axios from "axios";
+import { fetchAllNews, NewsContent } from "../../../services/newsService";
+import MiniNews from "./MiniNews/MiniNews";
 
-interface MainPage {
-  id: number;
-  title: string;
-  subTitle: string;
-  timestamp: string;
-  imgURL: string;
-  newsGivenBy: string;
-}
-
-interface MainPageNewsProps {
-  id: number;
-}
-
-export default function MainPageCenterNews({ id }: MainPageNewsProps): JSX.Element | null {
-  const [news, setMainPageNews] = useState<MainPage | null>(null);
-  const dispatch = useDispatch();
-
-  const handleOpenNews = () => {
-    dispatch(setOpenNewsId(id));
-  };
+export default function MainPageCenterNews(): JSX.Element | null {
+  const [news, setNews] = useState<NewsContent[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`https://yle-react-default-rtdb.europe-west1.firebasedatabase.app/news/allNews/${id}.json`);
-        setMainPageNews(response.data);
+        const allNews = await fetchAllNews();
+        setNews(allNews);
       } catch (error) {
         console.error("Error fetching data", error);
       }
     };
 
     fetchData();
-  }, [id]);
+  }, []);
 
-  if (!news) {
-    return null;
-  }
+  const filteredNews = news.filter((newsItem) => newsItem.id !== 0);
 
   return (
-    <Link to={`/news/${news.id}`} onClick={handleOpenNews}>
-      <div className="centred__contentnews">
-        <div className="centred__contentnews-el">
-          <div className="imgbox"><img className="imgbox" src={news.imgURL} alt="img" /></div>
-          <div className="element__content">
-            <p>{news.newsGivenBy}</p>
-            <h1 className="el__news-header">{news.title}</h1>
-            <p className="news__text">{news.subTitle}</p>
-          </div>
-          <div className="dopinfo">{news.timestamp}</div>
-        </div>
-      </div>
-    </Link>
+    <div className="centred__contentnews">
+      {filteredNews.map((newsItem, index) => {
+        const isMiniNews = index % 3 === 2;
+
+        if (isMiniNews) {
+          return <MiniNews key={`mini-news-${newsItem.id}`} id={newsItem.id} />;
+        }
+
+        return (
+          <Link key={newsItem.id} to={`/news/${newsItem.id}`}>
+            <div className="centred__contentnews-el">
+              <div className="imgbox">
+                <img className="imgbox" src={newsItem.imgURL} alt="img" />
+              </div>
+              <div className="element__content">
+                <p>{newsItem.newsGivenBy}</p>
+                <h1 className="el__news-header">{newsItem.title}</h1>
+                <p className="news__text">{newsItem.subTitle}</p>
+              </div>
+              <div className="dopinfo">{newsItem.timestamp}</div>
+            </div>
+          </Link>
+        );
+      })}
+    </div>
   );
 }
