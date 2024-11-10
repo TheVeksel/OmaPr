@@ -179,7 +179,7 @@ const data = {
       timestamp: "10:15",
       newsGivenBy: "Tiede ja teknologia",
       imgURL:
-        "Suomalaiset opiskelijat kehittävät uudenlaista teknologiaa kaupunkiliikenteen sujuvoittamiseen",
+        "https://www.ts.fi/static/content/pic_5_5946590_k8448293_1200.jpg",
         theme: "Kotimaa",
     },
     {
