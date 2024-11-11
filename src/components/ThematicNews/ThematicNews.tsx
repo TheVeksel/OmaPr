@@ -54,15 +54,12 @@ export default function ThematicNews(): JSX.Element {
             <img src={thematicHeaderNews?.headerPicture} alt="Header" />
           </div>
         </aside>
-        <div>
-          <p className="img__year">{thematicHeaderNews?.year}</p>
-        </div>
       </div>
       <section className="all__news">
-      {thematicNews.map((newsItem) => (
-        <Link key={newsItem.id} to={`/news/${newsItem.id}`}>
+        <div className="centred__news">
         <p className="img__text">{thematicHeaderNews?.theme}</p>
-            <div className="centred__news">
+          {thematicNews.map((newsItem) => (
+            <Link key={newsItem.id} to={`/news/${newsItem.id}`}>
               <div className="centred__contentnews-el">
                 <div className="imgbox">
                   <img className="imgbox" src={newsItem.imgURL} alt="img" />
@@ -74,11 +71,11 @@ export default function ThematicNews(): JSX.Element {
                 </div>
                 <div className="dopinfo">{newsItem.timestamp}</div>
               </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          ))}
+        </div>
         <div className="center__bar"></div>
-        <SidedContent/>
+        <SidedContent />
       </section>
     </>
   );

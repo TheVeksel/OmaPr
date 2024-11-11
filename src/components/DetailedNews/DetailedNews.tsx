@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchNewsById, NewsContent } from "../../services/newsService";
 import SidedContent from "../MainNewsPage/SidedContent/SidedContent";
+import { Link } from "react-router-dom";
 
 export default function DetailedNews(): JSX.Element | null {
   const { id } = useParams<{ id: string }>();
@@ -33,7 +34,7 @@ export default function DetailedNews(): JSX.Element | null {
   return (
     <section className="all__news">
       <div className="centred__detailed-news">
-      <p className="newsgivenby">{news.theme}</p>
+          <p className="newsgivenby">{news.theme}</p>
         <div className="detailed__news-header">
           <h1>{news.title}</h1>
           <h3>{news.subTitle}</h3>

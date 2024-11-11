@@ -14,24 +14,18 @@ const data = {
       theme: "Venäjän hyökkäys",
       headerPicture:
         "https://c.files.bbci.co.uk/12767/production/_133532657_ukraine-russia-promo.png",
-      year: "",
-      text: "blabla"
     },
     {
       id: 1,
       theme: "Lähi-itä",
       headerPicture:
         "https://www.stimson.org/wp-content/uploads/2024/07/Middle-East-Soldiers-on-Map.jpg",
-      year: "",
-      text: "blabla"
     },
     {
       id: 2,
-      theme: "Yhdysvaltain presidentinvaalit",
+      theme: "Yhdysvaltain presidentinvaalit 2024",
       headerPicture:
-        "https://images.pexels.com/photos/4386426/pexels-photo-4386426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      year: "2024",
-      text: "blabla"
+        "https://www.lynxbroker.fi/app/uploads/sites/5/2024/08/yhdysvaltain-vaalit-2024.jpg",
     },
   ],
   allNews: [
@@ -236,29 +230,75 @@ const data = {
         "https://tmssl.akamaized.net//images/foto/galerie/lukas-hradecky-bayer-04-leverkusen-2024-1714970486-135794.jpg?lm=1714970496",
       theme: "Urheilu",
     },
-  ],
-  russiaWarNews: [
     {
-      id: 1,
-      title: "",
-      subTitle: "",
-      timeStamp: "",
+      id: 15,
+      title:
+        "Amerikkalainen mielipidemittausguru häkeltyi siitä, ketkä Trumpia äänestivät",
+      subTitle:
+        "Yhdysvaltain presidentinvaalien jälkeen moni vanha uskomus joutaa romukoppaan. Tätä mieltä on professori Christopher Borick.",
+      newsText:
+        "Ensin Christopher Borick haluaa kumota yhden Yhdysvaltain presidentinvaaleihin liitetyn väitteen. Mielipidemittauksiin ja vaalidataan erikoistunut amerikkalaisprofessori laskee antaneensa eri medioille 50–60 haastattelua vaalien jälkeen. \n Hän sanoo aloittavansa yleensä näin: \n – Tämä ei ollut rökälevoitto. Presidentinvaalien historiassa Kamala Harrisin ja Donald Trumpin välinen ero on selvä mutta ei poikkeuksellinen, Borick sanoo Ylen videohaastattelussa. \n Republikaanipuolueen ehdokas Trump voitti jokaisen ratkaisevan vaa’ankieliosavaltion. Hänen voittomarginaalinsa niissä oli 1,5–3 prosenttiyksikköä. Karkeasti tämä tarkoittaa 50 000–200 000 ääntä osavaltiota kohti. \n – Kyse oli siitä, että Trump sai marginaalit puolelleen monessa eri äänestäjäryhmässä ja monella alueella, Borick sanoo. \n Poikkeuksellisia asioita vaaliyönä kuitenkin nähtiin. \n – On häkellyttävää, kuinka paljon Trump sai ääniä niiltä, joita on pidetty demokraattien ydinkannattajina: kaupunkilaisilta, nuorilta ja etnisiltä vähemmistöiltä. \n Trump onnistui kasvattamaan kannatustaan käytännössä kaikissa väestöryhmissä paitsi korkeakoulutettujen ja yli 65-vuotiaiden joukossa.",
+      timestamp: "7:00",
+      newsGivenBy: "Satu Helin",
+      imgURL:
+        "https://www.kirkkojakaupunki.fi/o/adaptive-media/image/19035800/1200/297884.jpg",
+      theme: "Yhdysvaltain presidentinvaalit 2024",
     },
-  ],
-  americaPresidentialElectionNews: [
     {
-      id: 1,
-      title: "",
-      subTitle: "",
-      timeStamp: "",
+      id: 16,
+      title:
+        "Näin Trumpin voitto puree kaikkiin suomalaisiin – lue kymmenen kysymystä ja vastausta talousvaikutuksista",
+      subTitle:
+        "EU:n talous on hiipunut, mutta Yhdysvaltain talous puksuttaa kuin juna.",
+      newsText:
+        "Jos Yhdysvaltain presidentinvaalit voittanut Donald Trump lätkäisee tulleja EU:lle, vaikutukset voivat heijastua tavallisten suomalaisten talouteen asti. \n Yle pyysi Nordean pääekonomistia Tuuli Koivua, Elinkeinoeleämän keskusliiton (EK) kansainvälisestä kaupasta vastaavaa johtajaa Timo Vuorta sekä Suomen ja Yhdysvaltain välistä kauppaa edistävän Amcham Finlandin yhteiskuntasuhdeasiantuntija Markus Myllyniemeä analysoimaan vaalituloksen taloudellisia vaikutuksia. \n Ne ovat isoja ja ulottuvat kaikkiin suomalaisiin. \n 1. Yhdysvallat on Suomen suurin vientimaa. Miten tämä vaalitulos vaikuttaa meihin? \nTrump on tunnettu siitä, että hän luo epävarmuutta ympärilleen. \n – Kampanjoidessaan Trump puhui paljon tulleista, mutta on epävarmaa, miten niitä laitetaan toimeen. Trump haluaa pitää talouskasvun korkeana Yhdysvalloissa, mikä tarkoittaa kasvavaa vientimarkkinaa, mutta jos vientimahdollisuutta torpedoidaan tuontitullein, ulkomaille jää vähemmän palasia USA:n kasvavasta kakusta, sanoo Nordean Tuuli Koivu. \n – Pahoin pelkään, että Trump vie sen ohjelmansa lävitse, johon liittyy tulleja. Siihen liittyy iso kauppasodan uhka, EK:n Vuori toteaa. \n – Mahdolliset tullit näkyvät suoraan hinnoissa ja saattavat aiheuttaa haasteita yritysten toimitusketjuissa. Se voi saattaa näkyä ihmisten arjessa niin, että tilattu tavara myöhästyy, Amchamin Myllyniemi sanoo.",
+      timestamp: "6:00",
+      newsGivenBy: "Ulla Malminen, Pekka Pantsu",
+      imgURL:
+        "https://www.vasenvoima.fi/wp-content/uploads/2024/11/TrumpinMuija.png",
+      theme: "Yhdysvaltain presidentinvaalit 2024",
     },
-  ],
-  nearEastWarNews: [
     {
-      id: 1,
-      title: "",
-      subTitle: "",
-      timeStamp: "",
+      id: 17,
+      title:
+        "Yksi seikka yhdistää lähes kaikkia Trumpin avainpelaajia – tässä he ovat",
+      subTitle:
+        "Yhdysvaltain tulevan presidentin hallintoon nousee Trumpin uskollisia tukijoita.",
+      newsText:
+        "Donald Trump palaa Yhdysvaltain presidentiksi tammikuun lopussa. Trumpin on äskettäin uutisoitu nimittäneen tulevaksi kansliapäällikökseen Valkoiseen taloon vaalikampanjaansa johtaneen Susie Wilesin. Kyseessä on ensimmäinen tärkeä virkanimitys vaalivoiton jälkeen. \n Muiden nimitysten osalta ei vielä tiedetä, keitä Trump aikoo nostaa avustajikseen ja ministereikseen. Trumpin lähipiiri on valmistellut vallanvaihtoa jo kuukausia piilossa julkisuudelta. Vallanvaihtotiimiä johtavat liikenainen Linda McMahon ja miljardööri Howard Lutnick. \n Trump on painottanut, e tä hän haluaa tällä kertaa mahdollisimman uskollisia avustajia, jotka eivät yritä estää hänen tavoitteidensa toteutumista. \n Muun muassa nämä nimet ovat nousseet esiin haastatteluissa, vuodoissa ja eri viestimien tekemissä analyyseissa. \n Silmiinpistävää on, että lähes kaikki virkoihin arvellut henkilöt ovat miehiä.",
+      timestamp: "5:00",
+      newsGivenBy: "Simo Ortamo",
+      imgURL:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSweBkQAesNrXskUj_JRzaqFb2MwmjoO89NA&shttps://zephyrnet.com/wp-content/uploads/2024/11/the-us-2024-elections-are-shaping-up-to-be-crucial-for-cryptos-future.jpg",
+      theme: "Yhdysvaltain presidentinvaalit 2024",
+    },
+    {
+      id: 18,
+      title:
+        "Venäjän ihmisoikeusviranomainen: Poliittista sortoa ei ole, ainoastaan vähäisiä puhdistustoimenpiteitä",
+      subTitle:
+        "Ihmisoikeusjärjestö OVD-Infon mukaan Venäjällä on nostettu yli 9 000 syytettä armeijan häpäisemisestä, millä tarkoitetaan normaalisti Ukrainan sodan arvostelua.",
+      newsText:
+        "Venäjän ihmisoikeusneuvoston puheenjohtajan mukaan maan laajassa toisinajattelijoiden hiljentämisessä on kyse puhdistustoimista, ei poliittisesta sorrosta. \n Ukrainan sodan arvostelu on Venäjällä käytännössä kiellettyä, ja kaikki Venäjän presidentti Vladimir Putinin vastustajat ovat joko vankilassa, maanpaossa tai kuolleita. \n – Onhan tämä vaikea ja raskas tilanne, olemme sodassa lännen kanssa, Valeri Fadejev sanoi valtiollisen Interfax-uutistoimiston mukaan. \n – Eikä joitakin minimaalisia rajoituksia sellaisille, jotka ovat itse asiassa vihollisen puolella, voi pitää sortona, vaan vähäisinä puhdistustoimenpiteinä, puheenjohtaja väitti. \n Ihmisoikeusjärjestö OVD-Infon mukaan Venäjällä on nostettu yli 9 000 syytettä armeijan häpäisemisestä, millä tarkoitetaan normaalisti Ukrainan sodan arvostelua. Poliittisia vankeja on ihmisoikeusjärjestöjen mukaan sadoittain.",
+      timestamp: "6:00",
+      newsGivenBy: "Paula Tapiola",
+      imgURL:
+        "https://www.atlanticcouncil.org/wp-content/uploads/2024/03/2024-02-29T115741Z_75777883_RC2BC6AQU6B5_RTRMADP_3_RUSSIA-PUTIN-1024x683.jpg",
+      theme: "Venäjän hyökkäys",
+    },
+    {
+      id: 19,
+      title:
+        "Ukrainan rintama osittain murtunut – asiantuntija: Ukrainan isku Kurskiin toimii nyt Venäjän hyväksi",
+      subTitle:
+        "Lähiviikot näyttävät, pystyykö Ukraina pysäyttämään asemien sisään tunkeutuneet venäläiset vai onko syntymässä läpimurto.",
+      newsText:
+        "Ukrainan joukot ovat ajautuneet ahtaalle itärintamalla. Edessä saattaa olla sodan merkittävä käänne. \n Venäjän joukot aloittivat panssaroiduilla voimillaan noin viikko sitten suuren hyökkäyksen Ukrainan sotarintaman eteläosassa, Vuhledarin länsipuolella. \n Avoimista lähteistä sotaa seuraavan Black Bird Groupin analyytikko Pasi Paroinen kertoo Ukrainan rintaman murtuneen paikallisesti ja Venäjän edenneen viikossa jopa kymmenen kilometriä. \n – Pahimmassa tapauksessa ollaan siinä pisteessä, että romahdus on käynnissä paikallisesti, Paroinen sanoo. \n Tuleva viikko näyttää, pystyvätkö ukrainalaiset pitämään rintaman koossa vai onko kyseessä läpimurto. \n – Tässä selkeästi murtauduttiin ukrainalaisten asemiin sisälle. Mutta se, että voitaisiin puhua läpimurrosta, niin silloin pitäisi edetä asemien läpi myös aika rivakasti syvyyteen, Paroinen kuvailee. \n Ukrainan armeijan tilanne käy jatkuvasti yhä vaikeammaksi, Paroinen toteaa. Venäjä pystyy valtaamaan maa-alaa nopeammin kuin koskaan sodan aikana sitten kesän 2022, hän sanoo. Nyt tapahtuneen etenemisen myötä venäläiset ovat saaneet haltuunsa kukkulamaaston, josta hyökkäyksen jatkaminen loivaan alamäkeen on entistä helpompaa.",
+      timestamp: "6:30",
+      newsGivenBy: "Yrjö Kokkonen",
+      imgURL:
+        "https://www.washingtonpost.com/wp-stat/graphics/ai2html/step3-v6/VR5RA54W3VCSJCVTEBFE4CRKE4/2300-country-step3-now.jpg?c=1676925649770",
+      theme: "Venäjän hyökkäys",
     },
   ],
 };

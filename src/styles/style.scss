@@ -38,7 +38,7 @@ body {
 .header__wraper {
   width: 100%;
   background-color: #1f2123;
-  border-bottom: 1px rgb(68, 68, 68) solid;;
+  border-bottom: 1px rgb(68, 68, 68) solid;
 }
 
 header {
@@ -93,7 +93,6 @@ header {
       display: flex;
       align-items: center;
       gap: 30px;
-      margin-right: 40px;
 
       .login {
         align-items: center;
@@ -299,6 +298,7 @@ header {
 
 .centred__news {
   flex-grow: 2;
+  flex-direction: column;
 }
 
 .centred__contentnews-el {
@@ -315,7 +315,7 @@ header {
 }
 
 .element__content {
-  padding:  0 15px 0;
+  padding: 0 15px 0;
   line-height: 150%;
 }
 
@@ -444,8 +444,8 @@ header {
 /* MEDIA QUERIES */
 @media (max-width: 1024px) {
   header {
-    flex-direction: column;
     padding: 10px;
+    position: relative;
 
     .header__main-news,
     .search,
@@ -456,6 +456,7 @@ header {
 
     .wrapper {
       justify-content: center;
+      padding: 0;
     }
 
     .main {
@@ -483,6 +484,25 @@ header {
   }
   .sided__content {
     display: none !important;
+  }
+  .main {
+    margin-right: 40vw;
+  }
+  .logo {
+    width: 55px;
+  }
+  .other {
+    justify-content: space-between;
+    width: 100%;
+
+    .login {
+      order: 1;
+    }
+
+    .hamburger {
+      order: 3;
+      margin-left: auto; // Сдвигаем гамбургер вправо
+    }
   }
 }
 @media (min-width: 1024px) {

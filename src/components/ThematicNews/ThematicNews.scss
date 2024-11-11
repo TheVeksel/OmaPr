@@ -4,7 +4,7 @@
 
 .img-box {
   width: 100%;
-  max-height: 30vh;
+  max-height: 35vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -34,13 +34,6 @@
   left: 10vw;
   font-size: 40px;
   margin-bottom: 10px;
-}
-
-.thematicnews {
-  display: flex;
-  min-width: 328px;
-  max-width: 1080px;
-  width: var(--viewportWidthWithoutScrollbar);
 }
 
 @media (max-width: 768px) {
