@@ -127,6 +127,17 @@ header {
         img {
           max-width: 30px;
         }
+        &__cross {
+          align-items: center;
+          display: flex;
+          width: 30px;
+          gap: 10px;
+          background-color: #1f2123;
+
+          img {
+            max-width: 20px;
+          }
+        }
       }
     }
   }
@@ -504,7 +515,7 @@ header {
       justify-content: center;
     }
 
-    .hamburger {
+    .hamburger, .hamburger__cross {
       margin-left: auto;
       margin-right: 10px;
     }
@@ -541,7 +552,7 @@ header {
       order: 1;
     }
 
-    .hamburger {
+    .hamburger, .hamburger__cross {
       order: 3;
       margin-left: auto;
     }

@@ -1,13 +1,7 @@
 import { useState } from "react";
-import Button from "../Button/Button";
+import Hamburger from "./HamburgerContent/Hamburger";
 
 export default function ThirdHeaderPart(): JSX.Element {
-
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleClick = (() => {
-    setIsOpen(true)
-  })
 
   return (
     <div className="other">
@@ -19,9 +13,7 @@ export default function ThirdHeaderPart(): JSX.Element {
         <p>Hae</p>
         <img className="search__img" src="/photo/lataus.png" alt="img" />
       </div>
-      <Button className="hamburger" onClick={() => console.log("click")}>
-        <img src="/photo/latau.webp.webp" alt="img" />
-      </Button>
+      <Hamburger/>
     </div>
   );
 }
