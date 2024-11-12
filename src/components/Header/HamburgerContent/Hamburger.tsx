@@ -16,11 +16,13 @@ export default function Hamburger(): JSX.Element {
           <img src="/photo/latau.webp.webp" alt="img" />
         </Button>
       ) : (
-        <Button className="hamburger__cross" onClick={() => { handleClick(false); }}>
-          <div className="hamburger__cross"><img src="/photo/14b139a9eb23f9e86e42e4528879bbdb.png" alt="img" /></div>
+        <Button className="hamburger__cross" onClick={() => handleClick(false)}>
+          <div className="hamburger__cross">
+            <img src="/photo/14b139a9eb23f9e86e42e4528879bbdb.png" alt="img" />
+          </div>
         </Button>
       )}
-      {isOpen && <HamburgerContent />}
+      {isOpen && <HamburgerContent onClose={() => handleClick(false)} />}
     </>
   );
 }
