@@ -138,13 +138,13 @@ header {
   scrollbar-width: none;
   background-color: #1f2123;
   display: flex;
-  padding: 10px 20px;
+  padding: 20px 40px;
   border-bottom: 1px rgb(79, 79, 79) solid;
-  overflow-x: scroll;
   position: relative;
-  gap: 15px;
+  gap: 5px;
   width: 100%;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .scroll-button {
@@ -181,15 +181,56 @@ header {
   align-items: flex-start;
   flex-grow: 1;
   margin: 5px 0 0 0;
-  border-bottom: 1px solid #333;
   gap: 5px;
-  min-height: 100px;
   min-width: 350px;
+
+  .aside__list-wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .decoration {
+    width: 10px;
+    height: 1px;
+    background-color: #3c3e3f;
+    flex-grow: 1;
+    align-items: center;
+  }
+}
+
+.first-element::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 21%;
+  left: 1.3vw;
+  width: 10px;
+  height: 10px;
+  background-color: #e90e43;
+  border-radius: 50%;
+  animation: pulse 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
 }
 
 .main__text {
   font-size: 16px;
-  margin-right: 10px;
+  margin-top: 10px;
 }
 
 .news-header {
@@ -202,7 +243,7 @@ header {
 }
 
 .time-ago {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .all__news {
@@ -523,12 +564,15 @@ header {
     width: calc(var(--viewportWidthWithoutScrollbar) * 0.625 - 39px);
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   #elNum3 {
     display: none;
   }
 
   .scroll-button {
     display: none;
+  }
+  .first-element::before {
+    left: 4%;
   }
 }

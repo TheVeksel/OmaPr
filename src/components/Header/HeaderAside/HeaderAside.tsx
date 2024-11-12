@@ -1,8 +1,7 @@
 import { useEffect, useState, useRef } from "react";
-import axios from "axios";
 import HeaderAsideElement from "./HeaderAsideElement";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { fetchAllNews } from "../../../services/newsService";
 
 export interface AsideMainNewsItem {
   id: number;
@@ -17,22 +16,21 @@ export default function HeaderAside(): JSX.Element {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://yle-react-default-rtdb.europe-west1.firebasedatabase.app/news/allNews.json");
-        const newsArray = Object.values(response.data) as AsideMainNewsItem[];
-        setAsideNews(newsArray);
+        const allNews = await fetchAllNews();
+        setAsideNews(allNews);
       } catch (error) {
-        console.error("Error fetching data:", error);
+        console.error("Error fetching data", error);
       }
     };
 
     fetchData();
   }, []);
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
-  const handleClick = (id:number) => {
-    navigate(`/news/${id}`)
-  }
+  const handleClick = (id: number) => {
+    navigate(`/news/${id}`);
+  };
 
   const smoothScroll = (distance: number) => {
     let scrolled = 0;
@@ -45,7 +43,7 @@ export default function HeaderAside(): JSX.Element {
     };
     step();
   };
-  
+
   const scrollLeft = () => smoothScroll(-window.innerWidth);
   const scrollRight = () => smoothScroll(window.innerWidth);
 
@@ -78,9 +76,13 @@ export default function HeaderAside(): JSX.Element {
       </button>
 
       <aside ref={asideRef} className="header__aside">
-        {asideNews.map(newsItem => (
+        {asideNews.map((newsItem, index) => (
           <Link key={newsItem.id} to={`/news/${newsItem.id}`}>
-            <HeaderAsideElement onClick={handleClick} news={newsItem}  />
+            <HeaderAsideElement
+              onClick={handleClick}
+              news={newsItem}
+              isFirst={index === 0} 
+            />
           </Link>
         ))}
       </aside>
