@@ -1,5 +1,6 @@
 .searchaside {
   background-color: #1f2123;
+  padding: 10px;
 
   &__input {
     height: 48px;
@@ -21,7 +22,9 @@
   }
 }
 .searched__element {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #303233;
 }
 .searched__element h1 {
   padding-bottom: 10px;
