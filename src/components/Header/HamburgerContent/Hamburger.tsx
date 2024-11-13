@@ -1,16 +1,35 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Button from "../../Button/Button";
 import HamburgerContent from "./HamburgerContent";
 
 export default function Hamburger(): JSX.Element {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const hamburgerRef = useRef<HTMLDivElement>(null);
 
   const handleClick = (bool: boolean) => {
     setIsOpen(bool);
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (hamburgerRef.current && !hamburgerRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
+
   return (
-    <>
+    <div ref={hamburgerRef}> 
       {isOpen === false ? (
         <Button className="hamburger" onClick={() => handleClick(true)}>
           <img src="/photo/latau.webp.webp" alt="img" />
@@ -23,6 +42,6 @@ export default function Hamburger(): JSX.Element {
         </Button>
       )}
       {isOpen && <HamburgerContent onClose={() => handleClick(false)} />}
-    </>
+    </div>
   );
 }

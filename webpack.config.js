@@ -6,55 +6,55 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   entry: './src/index.tsx',
   output: {
-    path: path.resolve(__dirname, 'dist'), // Путь к выходной директории
-    filename: 'bundle.js', // Имя выходного файла
-    publicPath: '/', // Путь для доступа к статическим файлам
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js', 
+    publicPath: '/', 
   },
   resolve: {
-    extensions: ['.js', '.ts', '.tsx', '.jsx'], // Расширения файлов
+    extensions: ['.js', '.ts', '.tsx', '.jsx'],
   },
   module: {
     rules: [
       {
-        test: /\.tsx?$/, // Для TypeScript файлов
+        test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
       },
       {
-        test: /\.css$/, // Для CSS файлов
+        test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.scss$/, // Для SCSS файлов
+        test: /\.scss$/, 
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i, // Для изображений
+        test: /\.(png|svg|jpg|jpeg|gif)$/i, 
         type: 'asset/resource',
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i, // Для шрифтов
+        test: /\.(woff|woff2|eot|ttf|otf)$/i, 
         type: 'asset/resource',
       },
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(), // Очищает выходную папку перед каждой сборкой
+    new CleanWebpackPlugin(), 
     new HtmlWebpackPlugin({
-      template: './public/index.html', // Шаблон для создания index.html
+      template: './public/index.html', 
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: 'public/photo', to: 'photo' }, // Копирование папки с изображениями
+        { from: 'public/photo', to: 'photo' },
       ],
     }),
   ],
   devServer: {
-    static: path.resolve(__dirname, 'dist'), // Путь к статическим файлам для devServer
-    port: 3000, // Порт для сервера
-    open: true, // Автоматически открывать браузер
-    hot: true, // Включить горячую замену модулей
-    historyApiFallback: true, // Для поддержки маршрутизации
+    static: path.resolve(__dirname, 'dist'), 
+    port: 3000, 
+    open: true, 
+    hot: true,
+    historyApiFallback: true,
   },
   mode: 'development',
 };
