@@ -9,12 +9,14 @@ export default function HamburgerContent({ onClose }: HamburgerContentProps): JS
   return (
     <div className="hamburger__wrapper">
       <div className="hamburger__content">
+      <Link to={"/search"} onClick={onClose}>
         <div className="hamburger__content-search">
           <div className="hamburger__search">
             <p>Hae Ylen sisältöä</p>
             <img className="hamburger__search-img" src="/photo/lataus.png" alt="img" />
           </div>
         </div>
+        </Link>
         <div className="hamburger__content-themes">
           <h2 className="hamburger__content-header">Pinnalla nyt</h2>
           <ul>

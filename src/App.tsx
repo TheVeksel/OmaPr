@@ -4,6 +4,7 @@ import MainNewsPage from "./components/MainNewsPage/MainNewsPage";
 import DetailedNews from "./components/DetailedNews/DetailedNews";
 import HeaderAside from "./components/Header/HeaderAside/HeaderAside";
 import ThematicNews from "./components/ThematicNews/ThematicNews";
+import SearchPage from "./components/SearchPage/SearchPage";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ function MainLayout() {
       <Routes>
         <Route path="/" element={<MainNewsPage />} />
         <Route path="/news/:id" element={<DetailedNews />} />
+        <Route path="/search" element={<SearchPage/>}/>
         <Route path="/headerMainThemes/:id" element={<ThematicNews/>}/>
       </Routes>
     </>
