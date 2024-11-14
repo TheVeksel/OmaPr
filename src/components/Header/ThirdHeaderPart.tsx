@@ -2,6 +2,7 @@ import Hamburger from "./HamburgerContent/Hamburger";
 import { Link } from "react-router-dom";
 
 export default function ThirdHeaderPart(): JSX.Element {
+  
   return (
     <div className="other">
       <div className="login">
@@ -14,7 +15,7 @@ export default function ThirdHeaderPart(): JSX.Element {
           <img className="search__img" src="/photo/lataus.png" alt="img" />
         </div>
       </Link>
-      <Hamburger />
+        <Hamburger />
     </div>
   );
 }

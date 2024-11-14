@@ -92,7 +92,7 @@ header {
     .other {
       display: flex;
       align-items: center;
-      gap: 30px;
+      gap: 15px;
 
       .login {
         align-items: center;
@@ -168,6 +168,8 @@ header {
   font-size: 20px;
   cursor: pointer;
   z-index: 2;
+  padding: 15px;
+  margin-bottom: 10px;
 
   &.left {
     top: 1vh;
@@ -261,6 +263,7 @@ header {
   display: flex;
   min-width: 328px;
   max-width: 1080px;
+  padding: 16px;
   width: var(--viewportWidthWithoutScrollbar);
 }
 
@@ -521,16 +524,12 @@ header {
 
     .wrapper {
       justify-content: center;
+      flex-grow: 0;
       padding: 0;
     }
 
     .main {
       justify-content: center;
-    }
-
-    .hamburger, .hamburger__cross {
-      margin-left: auto;
-      margin-right: 10px;
     }
   }
 
@@ -538,7 +537,6 @@ header {
   .centred__detailed-news {
     display: block;
     width: 100%;
-    padding: 10px;
   }
 
   .centred__contentnews {
@@ -558,23 +556,14 @@ header {
     width: 55px;
   }
   .other {
-    justify-content: space-between;
-    width: 100%;
+    max-width: 100%;
 
-    .login {
-      order: 1;
-    }
-
-    .hamburger, .hamburger__cross {
-      order: 3;
-      margin-left: auto;
-    }
   }
 }
 @media (min-width: 1023px) {
   .all__news {
     margin: 40px auto;
-    padding: 0px 12px;
+    padding: 16px;
   }
   .center__bar {
     display: flex;
