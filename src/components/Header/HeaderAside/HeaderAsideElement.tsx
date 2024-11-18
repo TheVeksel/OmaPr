@@ -2,13 +2,12 @@ import { AsideMainNewsItem } from "./HeaderAside";
 
 interface AsideMainNewsProps {
   news: AsideMainNewsItem;
-  onClick: (id: number) => void;
   isFirst: boolean;  
 }
 
-export default function HeaderAsideElement({ news, onClick, isFirst }: AsideMainNewsProps): JSX.Element {
+export default function HeaderAsideElement({ news,  isFirst }: AsideMainNewsProps): JSX.Element {
   return (
-    <li className={`aside__list-element ${isFirst ? "first-element" : ""}`} onClick={() => onClick(news.id)}>
+    <li className={`aside__list-element ${isFirst ? "first-element" : ""}`}>
       <div className="aside__list-wrapper">
         <p className="time-ago">{news.timestamp}</p>
         <div className="decoration"></div>

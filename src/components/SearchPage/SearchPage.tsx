@@ -16,6 +16,15 @@ export default function SearchPage(): JSX.Element {
   const [showResults, setShowResults] = useState<boolean>(false);
   const [filteredNews, setFilteredNews] = useState<SearchedNews[]>([]);
   const input = useInput();
+  
+  const fetchData = useCallback(async () => {
+    try {
+      const allNews = await fetchAllNews();
+      setSearchedNews(allNews);
+    } catch (error) {
+      console.error("Error fetching data", error);
+    }
+  }, []);
 
   const handleEnterPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === "Enter") {
@@ -27,14 +36,6 @@ export default function SearchPage(): JSX.Element {
     }
   };
 
-  const fetchData = useCallback(async () => {
-    try {
-      const allNews = await fetchAllNews();
-      setSearchedNews(allNews);
-    } catch (error) {
-      console.error("Error fetching data", error);
-    }
-  }, []);
 
   useEffect(() => {
     fetchData();

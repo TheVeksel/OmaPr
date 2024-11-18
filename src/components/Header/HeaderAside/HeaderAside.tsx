@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import HeaderAsideElement from "./HeaderAsideElement";
-import { Link, useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { fetchAllNews } from "../../../services/newsService";
 
 export interface AsideMainNewsItem {
@@ -26,18 +26,13 @@ export default function HeaderAside(): JSX.Element {
     fetchData();
   }, []);
 
-  const navigate = useNavigate();
-
-  const handleClick = (id: number) => {
-    navigate(`/news/${id}`);
-  };
 
   const smoothScroll = (distance: number) => {
     let scrolled = 0;
     const step = () => {
       if (asideRef.current && scrolled < Math.abs(distance)) {
-        asideRef.current.scrollBy({ left: distance / 150 });
-        scrolled += Math.abs(distance) / 150;
+        asideRef.current.scrollBy({ left: distance / 100 });
+        scrolled += Math.abs(distance) / 100;
         requestAnimationFrame(step);
       }
     };
@@ -57,35 +52,34 @@ export default function HeaderAside(): JSX.Element {
     }
   };
 
-  useEffect(() => {
-    const aside = asideRef.current;
-    aside?.addEventListener("wheel", handleWheel, { passive: false });
+  useEffect(() => {;
+    asideRef.current?.addEventListener("wheel", handleWheel, { passive: false });
 
     return () => {
-      aside?.removeEventListener("wheel", handleWheel);
+      asideRef.current?.removeEventListener("wheel", handleWheel);
     };
   }, []);
 
   return (
-    <div style={{ position: "relative" }}>
-      <button className="scroll-button left" onClick={scrollLeft}>
-        ←
-      </button>
-      <button className="scroll-button right" onClick={scrollRight}>
-        →
-      </button>
-
-      <aside ref={asideRef} className="header__aside">
+    <aside className="header__aside">
+      <div ref={asideRef} className="header__aside-swiper">
         {asideNews.map((newsItem, index) => (
           <Link key={newsItem.id} to={`/news/${newsItem.id}`}>
             <HeaderAsideElement
-              onClick={handleClick}
               news={newsItem}
-              isFirst={index === 0} 
+              isFirst={index === 0}
             />
           </Link>
         ))}
-      </aside>
-    </div>
+      </div>
+      <div className="button-box" style={{ position: "relative" }}>
+        <button className="scroll-button left" onClick={scrollLeft}>
+          ←
+        </button>
+        <button className="scroll-button right" onClick={scrollRight}>
+          →
+        </button>
+      </div>
+    </aside>
   );
 }

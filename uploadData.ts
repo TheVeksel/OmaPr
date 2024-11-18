@@ -132,7 +132,7 @@ const data = {
         "Suomen hallitus on korottanut elokuvatuotantotukeaan osana kansainvälisen markkinoinnin strategiaa. Tämä avaa uusia mahdollisuuksia kansainvälisille tuotannoille tulla kuvaamaan elokuviaan Suomen kauniisiin ja monipuolisiin maisemiin. \n Suomen elokuvateollisuus on viime vuosina kasvanut, ja uusi tuki tekee maasta entistä kilpailukykyisemmän muiden Euroopan maiden joukossa. \n Tämä päätös tuo mahdollisuuksia myös kotimaisille tuotantoyhtiöille ja edistää kulttuurialan työpaikkojen luomista.",
       timestamp: "13:15",
       newsGivenBy: "Suomen Elokuvasäätiö",
-      imgURL: "https://images.unsplash.com/photo-1503264116251-35a269479413",
+      imgURL: "https://konfo-files.opintopolku.fi/toteutus-teemakuva/1.2.246.562.17.00000000000000003366/2b634087-100e-40a1-b270-8c7fbefbefad.jpg",
       theme: "Kotimaa",
     },
     {
