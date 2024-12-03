@@ -38,7 +38,6 @@ export default function LoginModal({ onClose }: LoginModalProps) {
             <input
               id="emailAddress"
               className="modal__input"
-              type="email"
               placeholder="example@post.com"
               {...register("emailAddress", {
                 required: "Sähköposti on pakollinen",
