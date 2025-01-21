@@ -23,6 +23,3 @@ The project is still a work in progress. The registration and authentication sys
 The live project is available here:  
 👉 [OMA Project](https://oma-pr.vercel.app/)
 
----
-
-Feel free to explore the source code to learn or get inspired for similar projects!
